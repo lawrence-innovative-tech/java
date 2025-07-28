@@ -12,7 +12,7 @@ Two main function
 
 Basically, three type of the loader are exist. But in my point view there is a four. Because the last one is not a loader instead it load the primitive data type and array so that I declare as is loader.
 
-1. Bootstrap Class Loader : 
+1. Bootstrap Class Loader : Loads all the 
 2. Platform Class Loader :
 3. Application or System Class Loader : 
 4. JRE - It loads only **Primitive data types and array**.
