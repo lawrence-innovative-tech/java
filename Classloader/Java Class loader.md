@@ -15,4 +15,6 @@ Basically, three type of the loader are exist. But in my point view there is a f
 1. Bootstrap Class Loader : Loads all the necessary JDK classes which are used in the application.
 2. Platform Class Loader or Extension Class Loader : 
 3. Application or System Class Loader : 
-4. JRE - It loads only **Primitive data types and array**.![[1_aCuR4IQROYdkvaxYSeJCow.webp]]
+4. JRE - It loads only **Primitive data types and array**. 
+
+![[JavaClassLoader-Architecture.webp]]
