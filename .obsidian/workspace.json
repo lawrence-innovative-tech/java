@@ -150,13 +150,23 @@
               "icon": "lucide-list",
               "title": "Outline of Java Class loader"
             }
+          },
+          {
+            "id": "66ad8854a12af77e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 344.5
   },
   "left-ribbon": {
     "hiddenItems": {
