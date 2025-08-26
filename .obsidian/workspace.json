@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Classloader/Java Class loader.md",
+                "file": "JAVA/0 Interview Preparation/1 Beyond Java Topics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java Class loader"
+              "title": "1 Beyond Java Topics"
             }
           }
         ]
@@ -179,11 +179,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b247634f920363ba",
+  "active": "88609105b588e0fe",
   "lastOpenFiles": [
-    "Images/JavaClassLoader-Architecture.webp",
-    "Classloader/Java Class loader.md",
-    "Images",
-    "Classloader"
+    "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
+    "JAVA/0 Interview Preparation/1 Beyond Java Topics.md",
+    "JAVA/0 Interview Preparation",
+    "JAVA/2 Images/Java-roadmap.png",
+    "JAVA/2 Images/Beyond-java-topics.png",
+    "JAVA/2 Images/JavaClassLoader-Architecture.webp",
+    "JAVA/1 Classloader/Java Class loader.md",
+    "JAVA",
+    "JAVA/2 Images",
+    "JAVA/1 Classloader"
   ]
 }
