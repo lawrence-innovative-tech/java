@@ -8,7 +8,7 @@ Java Topics Mastery List (From Primitive to Mastery)
 ### **II. Object-Oriented Programming (OOP) - The Core Pillars
 
 1. Classes & Objects: Constructors, this keyword, member variables vs. local variables.
-2. Methods: Method signature, overloading, pass-by-value behavior.
+2. Methods: Method signature, overloading, pass-by-value behaviour.
 3. Core OOP Principles:
 4. Encapsulation: Access modifiers (private, protected, public, package-private), getters/setters.
 5. Inheritance: extends keyword, super keyword, method overriding, the instanceof operator.
