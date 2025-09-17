@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
+                "file": "JAVA/3 Fundamental & JVM Internals & Performance/Java Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0 JAVA ROADMAP"
+              "title": "Java Fundamentals"
             }
           },
           {
@@ -184,6 +184,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -193,10 +194,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "88609105b588e0fe",
+  "active": "b11d80b697e4c250",
   "lastOpenFiles": [
-    "Untitled.canvas",
     "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
+    "JAVA/3 Fundamental & JVM Internals & Performance/Java Fundamentals.md",
+    "JAVA/3 Fundamental & JVM Internals & Performance",
+    "Untitled.canvas",
     "JAVA/0 Interview Preparation/1 Springboot RoadMap.md",
     "JAVA/2 Images/Springboot-roadmap.png",
     "JAVA/0 Interview Preparation/2 Beyond Java Topics.md",
