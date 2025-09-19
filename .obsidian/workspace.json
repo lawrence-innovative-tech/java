@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/3 Fundamental & JVM Internals & Performance/Java Fundamentals.md",
+                "file": "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java Fundamentals"
+              "title": "1 Java Fundamentals"
+            }
+          },
+          {
+            "id": "a32640f3af8c3de1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0 JAVA ROADMAP"
             }
           },
           {
@@ -27,15 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/0 Interview Preparation/1 Springboot RoadMap.md",
+                "file": "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 Springboot RoadMap"
+              "title": "0 JAVA ROADMAP"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -194,22 +209,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b11d80b697e4c250",
+  "active": "b247634f920363ba",
   "lastOpenFiles": [
-    "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
-    "JAVA/3 Fundamental & JVM Internals & Performance/Java Fundamentals.md",
-    "JAVA/3 Fundamental & JVM Internals & Performance",
-    "Untitled.canvas",
     "JAVA/0 Interview Preparation/1 Springboot RoadMap.md",
-    "JAVA/2 Images/Springboot-roadmap.png",
+    "JAVA/10 Images/Beyond-java-topics.png",
     "JAVA/0 Interview Preparation/2 Beyond Java Topics.md",
+    "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance",
+    "Untitled.canvas",
+    "JAVA/10 Images/Springboot-roadmap.png",
     "JAVA/0 Interview Preparation",
-    "JAVA/2 Images/Java-roadmap.png",
-    "JAVA/2 Images/Beyond-java-topics.png",
-    "JAVA/2 Images/JavaClassLoader-Architecture.webp",
-    "JAVA/1 Classloader/Java Class loader.md",
+    "JAVA/10 Images/Java-roadmap.png",
+    "JAVA/10 Images/JavaClassLoader-Architecture.webp",
+    "JAVA/5 Classloader/Java Class loader.md",
     "JAVA",
-    "JAVA/2 Images",
-    "JAVA/1 Classloader"
+    "JAVA/10 Images",
+    "JAVA/5 Classloader"
   ]
 }

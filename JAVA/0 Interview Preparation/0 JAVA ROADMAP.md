@@ -1,5 +1,5 @@
 Java Topics Mastery List (From Primitive to Mastery)
-### **I. Foundational Syntax & Concepts
+### **I. Foundational Syntax & Concepts [[0 Fundamentals]]
 
 1. Primitive Data Types: byte, short, int, long, float, double, char, boolean
 2. Variables & Operators: Declaration, scope, arithmetic, relational, logical, assignment, ternary operator.

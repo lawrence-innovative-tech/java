@@ -1,6 +1,6 @@
 ### **What is JAVA
 
-	Java is high level, and Objexct-Oriented programming language Platform developed by SUN MicroSystem in 1995 (Now owned by Orcle).
+	Java is high level, Objexct-Oriented programming language, and Platform developed by SUN MicroSystem in 1995 (Now owned by Orcle).
 
 ### **Features of Java
 	1. Platform Independent : Build or Write once and Run anywhere(WORA).
@@ -11,7 +11,7 @@
 		1. Bigest Robust: Memeory management.
 		2. Strict compile time checking : 
 		   Strickly typed - Compiler knowns type of variables and expression in compile time. 
-		Strongly typed - Compiler enforces to type constraints which means String type    operation to Integer. 
+		Strongly typed - Compiler enforces to type constraints which means String type    operation could not perform to Integer. 
 				ex. 
 					String name = "Alice";
 					int length = name.length(); // Correct
