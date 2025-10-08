@@ -1,9 +1,11 @@
 Java Topics Mastery List (From Primitive to Mastery)
-### **I. Foundational Syntax & Concepts [[0 Fundamentals]]
+### **I. Foundational Syntax & Concepts
 
-1. Primitive Data Types: byte, short, int, long, float, double, char, boolean
-2. Variables & Operators: Declaration, scope, arithmetic, relational, logical, assignment, ternary operator.
-3. Control Flow Statements: if-else, switch (traditional and expression-based), for loops (including enhanced for-each), while, do-while, break, continue.
+1. The Fundamentals of the JAVA ([[0 Fundamentals|Core concept]])
+2. 
+3. Primitive Data Types: byte, short, int, long, float, double, char, boolean
+4. Variables & Operators: Declaration, scope, arithmetic, relational, logical, assignment, ternary operator.
+5. Control Flow Statements: if-else, switch (traditional and expression-based), for loops (including enhanced for-each), while, do-while, break, continue.
 
 ### **II. Object-Oriented Programming (OOP) - The Core Pillars
 
