@@ -1,7 +1,12 @@
 {
 	"nodes":[
 		{"id":"9de53a740283a2cc","x":-140,"y":-220,"width":250,"height":60,"type":"text","text":"Pc (Personal Computer)"},
-		{"id":"0579ddaa99b8d53d","type":"text","text":"Pc (Personal Computer)","x":-125,"y":-30,"width":250,"height":60}
+		{"id":"110613a95dcd1ca5","type":"text","text":"Router (Connects Multiple Switch)","x":-140,"y":-20,"width":250,"height":60},
+		{"id":"0579ddaa99b8d53d","type":"text","text":"Switch (It connected with multiple computer)","x":-140,"y":-120,"width":250,"height":60},
+		{"id":"dcb837207b8e00d4","type":"text","text":"Router (Connects Multiple Switch)","x":-120,"y":60,"width":250,"height":60}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"fdc3aab41bf6992a","fromNode":"9de53a740283a2cc","fromSide":"bottom","toNode":"0579ddaa99b8d53d","toSide":"top"},
+		{"id":"8051eb3ff2cfdb0b","fromNode":"0579ddaa99b8d53d","fromSide":"bottom","toNode":"110613a95dcd1ca5","toSide":"top"}
+	]
 }
