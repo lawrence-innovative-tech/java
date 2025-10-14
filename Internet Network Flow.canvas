@@ -3,7 +3,7 @@
 		{"id":"9de53a740283a2cc","x":-140,"y":-300,"width":250,"height":60,"type":"text","text":"Pc (Personal Computer)"},
 		{"id":"0579ddaa99b8d53d","type":"text","text":"Switch (It connected with multiple computer)","x":-140,"y":-200,"width":250,"height":60},
 		{"id":"110613a95dcd1ca5","type":"text","text":"Router (Connects Multiple Switch)","x":-140,"y":-100,"width":250,"height":60},
-		{"id":"dcb837207b8e00d4","type":"text","text":"Firewall ()","x":-140,"y":20,"width":250,"height":60}
+		{"id":"dcb837207b8e00d4","type":"text","text":"Firewall (Its )","x":-140,"y":20,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"fdc3aab41bf6992a","fromNode":"9de53a740283a2cc","fromSide":"bottom","toNode":"0579ddaa99b8d53d","toSide":"top"},
