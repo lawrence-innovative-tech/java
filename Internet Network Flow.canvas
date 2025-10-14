@@ -1,15 +1,19 @@
 {
 	"nodes":[
-		{"id":"dcb837207b8e00d4","type":"text","text":"Firewall (Its secure part)","x":-140,"y":20,"width":250,"height":60},
-		{"id":"5fb2305ae87c96d9","type":"text","text":"Modem or Any internet provider","x":-140,"y":120,"width":250,"height":60},
-		{"id":"480cfb4cab3c09e9","type":"text","text":"Modem or Any internet provider","x":140,"y":80,"width":250,"height":60},
 		{"id":"9de53a740283a2cc","x":-390,"y":-300,"width":250,"height":60,"type":"text","text":"Pc (Personal Computer)"},
-		{"id":"110613a95dcd1ca5","type":"text","text":"Router (Connects Multiple Switch)","x":80,"y":-160,"width":250,"height":60},
-		{"id":"0579ddaa99b8d53d","type":"text","text":"Switch (It connected with multiple computer)","x":80,"y":-270,"width":250,"height":60}
+		{"id":"0579ddaa99b8d53d","type":"text","text":"Switch (It connected with multiple computer)","x":80,"y":-300,"width":250,"height":60},
+		{"id":"110613a95dcd1ca5","type":"text","text":"Router (Connects Multiple Switch)","x":80,"y":-180,"width":250,"height":60},
+		{"id":"dcb837207b8e00d4","type":"text","text":"Firewall (Its secure part)","x":-390,"y":-180,"width":250,"height":60},
+		{"id":"480cfb4cab3c09e9","type":"text","text":"Modem or Any internet provider","x":-390,"y":-60,"width":250,"height":60},
+		{"id":"5fb2305ae87c96d9","type":"text","text":"Att Fiber","x":80,"y":-60,"width":250,"height":60},
+		{"id":"dd8b96bce396f8e0","type":"text","text":"Internet (Outside network connection or server)","x":80,"y":40,"width":250,"height":60}
 	],
 	"edges":[
-		{"id":"fdc3aab41bf6992a","fromNode":"9de53a740283a2cc","fromSide":"right","toNode":"0579ddaa99b8d53d","toSide":"top"},
+		{"id":"fdc3aab41bf6992a","fromNode":"9de53a740283a2cc","fromSide":"right","toNode":"0579ddaa99b8d53d","toSide":"left"},
 		{"id":"8051eb3ff2cfdb0b","fromNode":"0579ddaa99b8d53d","fromSide":"bottom","toNode":"110613a95dcd1ca5","toSide":"top"},
-		{"id":"b48f608fdea7db55","fromNode":"110613a95dcd1ca5","fromSide":"bottom","toNode":"dcb837207b8e00d4","toSide":"top"}
+		{"id":"b48f608fdea7db55","fromNode":"110613a95dcd1ca5","fromSide":"left","toNode":"dcb837207b8e00d4","toSide":"right"},
+		{"id":"ea2e895fda1b8aac","fromNode":"dcb837207b8e00d4","fromSide":"bottom","toNode":"480cfb4cab3c09e9","toSide":"top"},
+		{"id":"25e425c0353b0d52","fromNode":"480cfb4cab3c09e9","fromSide":"right","toNode":"5fb2305ae87c96d9","toSide":"left"},
+		{"id":"289068dffa9d38cc","fromNode":"5fb2305ae87c96d9","fromSide":"bottom","toNode":"dd8b96bce396f8e0","toSide":"top"}
 	]
 }
