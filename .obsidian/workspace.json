@@ -93,29 +93,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking ccna (Cisco )/Fundamentals/Overview of Internet flow.md",
+                "file": "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Overview of Internet flow"
+              "title": "Basics of Internet"
             }
           },
           {
             "id": "d259851aa016a47b",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Internet Network Flow.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": -24.906245417594775,
-                  "zoom": 0
-                }
+                "file": "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Internet Network Flow"
+              "icon": "lucide-file",
+              "title": "Basics of Internet"
             }
           }
         ],
@@ -280,10 +277,10 @@
   },
   "active": "d259851aa016a47b",
   "lastOpenFiles": [
+    "Internet Network Flow.canvas",
     "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
     "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
-    "Networking ccna (Cisco )/Fundamentals/Overview of Internet flow.md",
-    "Internet Network Flow.canvas",
+    "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
     "Networking ccna (Cisco )/Untitled.md",
     "Networking ccna (Cisco )/HTTP Version.md",
     "Networking ccna (Cisco )/Fundamentals",
