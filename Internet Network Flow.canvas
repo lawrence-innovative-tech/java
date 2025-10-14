@@ -1,0 +1,7 @@
+{
+	"nodes":[
+		{"id":"9de53a740283a2cc","x":-140,"y":-220,"width":250,"height":60,"type":"text","text":"Pc (Personal Computer)"},
+		{"id":"0579ddaa99b8d53d","type":"text","text":"Pc (Personal Computer)","x":-125,"y":-30,"width":250,"height":60}
+	],
+	"edges":[]
+}
