@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
+                "file": "Networking ccna (Cisco )/Fundamentals/Network Types.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basics of Internet"
+              "title": "Network Types"
             }
           },
           {
@@ -289,14 +289,14 @@
   },
   "active": "506064542711bc56",
   "lastOpenFiles": [
+    "Networking ccna (Cisco )/Fundamentals/Network Types.md",
+    "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
     "Internet Network Flow.canvas",
-    "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
     "Networking ccna (Cisco )/HTTP Version.md",
     "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
     "Mixed topics for interview preparation/(SDLC) Software Development Life Cycle.md",
     "Mixed topics for interview preparation",
     "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
-    "Networking ccna (Cisco )/Fundamentals/Untitled.md",
     "Networking ccna (Cisco )/Untitled.md",
     "Networking ccna (Cisco )/Fundamentals",
     "JAVA/0 Interview Preparation/DB.md",
