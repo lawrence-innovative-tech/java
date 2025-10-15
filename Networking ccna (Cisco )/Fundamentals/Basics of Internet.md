@@ -12,5 +12,6 @@ Internet protocol (IP) is unique identification of computer to communicate and d
 #### **Type of the internet
 1. LAN (Local Area Network)
 2. WAN (Wide Area Network)
+3. WAP (Wireless Address Provider)
 
 

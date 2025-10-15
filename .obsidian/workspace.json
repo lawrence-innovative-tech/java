@@ -81,17 +81,14 @@
             "id": "506064542711bc56",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Internet Network Flow.canvas",
-                "viewState": {
-                  "x": -30,
-                  "y": -150,
-                  "zoom": 0
-                }
+                "file": "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Internet Network Flow"
+              "icon": "lucide-file",
+              "title": "Basics of Internet"
             }
           },
           {
@@ -292,10 +289,10 @@
   },
   "active": "506064542711bc56",
   "lastOpenFiles": [
+    "Internet Network Flow.canvas",
     "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
     "Networking ccna (Cisco )/HTTP Version.md",
     "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
-    "Internet Network Flow.canvas",
     "Mixed topics for interview preparation/(SDLC) Software Development Life Cycle.md",
     "Mixed topics for interview preparation",
     "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
