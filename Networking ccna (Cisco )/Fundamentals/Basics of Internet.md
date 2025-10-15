@@ -1,5 +1,7 @@
 #### **Internet
 
+Inter - c
+net - 
 Internet is one or more computer get connect together via cable or Wi-Fi.
 
 #### **Internet Protocol 
@@ -13,5 +15,10 @@ Internet protocol (IP) is unique identification of computer to communicate and d
 1. LAN (Local Area Network)
 2. WAN (Wide Area Network)
 3. WAP (Wireless Address Provider)
+
+
+#### **Switch
+
+Switch is 
 
 
