@@ -1,9 +1,8 @@
 #### **Internet
 
 Inter - It sense group of circle or set of computer connects together. 
-net - the inter computer 
-Internet is one or more computer get connect together via cable or Wi-Fi.
-
+net - those connected computer form a net or web. 
+Internet is one or more computer get connect together via cable or Wi-Fi. The internet represented in common name.
 #### **Internet Protocol 
 
 Internet protocol (IP) is unique identification of computer to communicate and data transfer between two or more devices.
@@ -19,6 +18,6 @@ Internet protocol (IP) is unique identification of computer to communicate and d
 
 #### **Switch
 
-Switch is 
+Switch is [[#**Internet]|]
 
 
