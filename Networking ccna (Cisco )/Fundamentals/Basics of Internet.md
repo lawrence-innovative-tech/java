@@ -1,7 +1,7 @@
 #### **Internet
 
-Inter - c
-net - 
+Inter - It sense group of circle or set of computer connects together. 
+net - the inter computer 
 Internet is one or more computer get connect together via cable or Wi-Fi.
 
 #### **Internet Protocol 
