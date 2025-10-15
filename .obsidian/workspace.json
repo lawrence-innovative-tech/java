@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking ccna (Cisco )/Fundamentals/Network Types.md",
+                "file": "Networking ccna (Cisco )/Fundamentals/URL (Uniform Resource Locator).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Network Types"
+              "title": "URL (Uniform Resource Locator)"
             }
           },
           {
@@ -290,6 +290,7 @@
   "active": "506064542711bc56",
   "lastOpenFiles": [
     "Networking ccna (Cisco )/Fundamentals/Network Types.md",
+    "Networking ccna (Cisco )/Fundamentals/URL (Uniform Resource Locator).md",
     "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
     "Internet Network Flow.canvas",
     "Networking ccna (Cisco )/HTTP Version.md",
