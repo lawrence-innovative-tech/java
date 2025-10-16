@@ -46,7 +46,7 @@ graph LR
 		2. When Multicast get involved.
 		3. When APR sends to broadcast mac address to switch.
 		4. We can connect multiple switch in same environment.
-		5. Ask doubt, single switch can support subnet or not?
+		5. Ask doubt, single switch can support subnet or not? Yes
 
 ```mermaid
 graph TD
@@ -65,5 +65,9 @@ graph TD
 ```
 
 #### **Router
-- Router passthrough the ip to modem of the same network or connected master router to finds the mac address of the destination ip.
+- Router passthrough the ip to neighbour network or firewall or internet based on configuration.
 - It also use broadcast when DHCP (Dynamic Host Configuration Protocol) does not knows ip.
+ #### **Responsibilities
+ 1. Forward request to neighbour subnet/network.
+ 2. 
+ 
