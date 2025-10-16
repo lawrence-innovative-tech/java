@@ -15,7 +15,7 @@ MAC Address of the devices.
 
 ```mermaid
 graph LR
-    c1[Computer1] -->|Send message| H[Hub]
+    c1[Computer1] -->|Send message to <br> Computer4| H[Hub]
     H -->|Broadcast| c2[Computer2]
     H -->|Broadcast| c3[Computer3]
     H -->|Broadcast| c4[Computer4]
