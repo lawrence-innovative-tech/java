@@ -22,73 +22,20 @@
             }
           },
           {
-            "id": "b247634f920363ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/0 Interview Preparation/1 Springboot RoadMap.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 Springboot RoadMap"
-            }
-          },
-          {
-            "id": "b74ddfdf8a0ac7a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0 Fundamentals"
-            }
-          },
-          {
-            "id": "dc9c38fa903e0e29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 Java Fundamentals"
-            }
-          },
-          {
             "id": "4098718eefa24526",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
-                "mode": "source",
-                "source": false
+                "file": "Networking ccna (Cisco )/Imanges/Internet Network Flow.canvas",
+                "viewState": {
+                  "x": -30,
+                  "y": -150,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "0 JAVA ROADMAP"
-            }
-          },
-          {
-            "id": "506064542711bc56",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking ccna (Cisco )/Fundamentals/URL (Uniform Resource Locator).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "URL (Uniform Resource Locator)"
+              "icon": "lucide-layout-dashboard",
+              "title": "Internet Network Flow"
             }
           },
           {
@@ -114,21 +61,38 @@
             }
           },
           {
-            "id": "d1be47564c48fe8a",
+            "id": "908be0840990138e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
+                "file": "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0 JAVA ROADMAP"
+              "title": "Basics of Networking"
+            }
+          },
+          {
+            "id": "07da2d8f6c6f0d58",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Networking ccna (Cisco )/Imanges/Internet Network Flow.canvas",
+                "viewState": {
+                  "x": -30,
+                  "y": -150,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Internet Network Flow"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -287,23 +251,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "506064542711bc56",
+  "active": "908be0840990138e",
   "lastOpenFiles": [
+    "Networking ccna (Cisco )/Fundamentals/LAN (Local Area Network).md",
     "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
-    "Networking ccna (Cisco )/Fundamentals/URL (Uniform Resource Locator).md",
-    "Networking ccna (Cisco )/Fundamentals/Network Types.md",
-    "Internet Network Flow.canvas",
-    "Networking ccna (Cisco )/HTTP Version.md",
+    "Networking ccna (Cisco )/Imanges/Internet Network Flow.canvas",
+    "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
     "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
+    "Networking ccna (Cisco )/Imanges",
+    "Networking ccna (Cisco )/Fundamentals/URL (Uniform Resource Locator).md",
+    "Networking ccna (Cisco )/HTTP Version.md",
     "Mixed topics for interview preparation/(SDLC) Software Development Life Cycle.md",
     "Mixed topics for interview preparation",
-    "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
     "Networking ccna (Cisco )/Untitled.md",
     "Networking ccna (Cisco )/Fundamentals",
     "JAVA/0 Interview Preparation/DB.md",
     "Networking ccna (Cisco )",
     "JAVA/0 Interview Preparation/Matchinfo DB.md",
-    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
     "JAVA/5 Classloader/Java Class loader.md",
     "JAVA/5 Classloader",
     "JAVA/10 Images/Springboot-roadmap.png",
@@ -322,7 +287,6 @@
     "JAVA/2 Images/JavaClassLoader-Architecture.webp",
     "JAVA/1 Classloader/Java Class loader.md",
     "JAVA",
-    "JAVA/2 Images",
-    "JAVA/1 Classloader"
+    "JAVA/2 Images"
   ]
 }
