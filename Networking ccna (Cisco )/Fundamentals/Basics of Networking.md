@@ -19,7 +19,7 @@
 	e.x 2003:2343:FD09:82CD:2003:2343:FD09:82CD
 #### **Type of IP
 1. **Private IP** -
-2. **Public IP** - 
+2. **Public IP** -  
 
 #### **Switch
 
