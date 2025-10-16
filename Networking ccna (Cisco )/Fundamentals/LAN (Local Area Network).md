@@ -31,4 +31,5 @@ graph LR
 #### **Switch
 - It's more likes HUB but it has brained, so it's stores the mac address of the device in **CAM 
 (Content Addressable Memory)** table.
-- Initial message tri
+- A device wants to sent message to another connected device via IP address but switch can knows only the mac address of the device, so here ARP(Address Resolver Protocol) get helps to resolve the mac address of the device.
+- 
