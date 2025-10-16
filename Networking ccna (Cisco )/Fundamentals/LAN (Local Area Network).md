@@ -31,5 +31,26 @@ graph LR
 #### **Switch
 - It's more likes HUB but it has brained, so it's stores the mac address of the device in **CAM 
 (Content Addressable Memory)** table.
-- A device wants to sent message to another connected device via IP address but switch can knows only the mac address of the device, so here ARP(Address Resolver Protocol) get helps to resolve the mac address of the device.
-- 
+- Steps and procedure of the switch
+	1. A device sent message or ping another device in same subnet or different subnet. It get convert into ARP(Address Resolver Protocol) Packets and sent to switch.
+	2. Switch received the ARP packets checks the CAM(Content Addressable Memory) table to find the mac address of the device. If it exist send message to device.
+	3. If not available switch broadcast to connected device to get address.
+	4. When the Ip exist the system its returns the ip and mac address to switch.
+	5. Now, switch stores the ip and mac address and returns to source system.
+
+
+```mermaid
+graph TD
+    c1[Computer1] -->|Send message to <br> Computer4| A[ARP Packet]
+    A --> H[switch] 
+    H -->|Broadcast| c2[Computer2]
+    H -->|Broadcast| c3[Computer3]
+    H -->|Broadcast| c4[Computer4]
+
+    c4 -->|Replied IP & Mac| H
+     H --> |Replied| A
+     A --> |Replied| c1[Computer1]
+     
+    style c1 fill:#ffebee
+    style c4 fill:#e8f5e8
+```
