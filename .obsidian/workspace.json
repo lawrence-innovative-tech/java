@@ -78,21 +78,18 @@
             "id": "07da2d8f6c6f0d58",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Networking ccna (Cisco )/Imanges/Internet Network Flow.canvas",
-                "viewState": {
-                  "x": -30,
-                  "y": -150,
-                  "zoom": 0
-                }
+                "file": "Networking ccna (Cisco )/Fundamentals/LAN (Local Area Network).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Internet Network Flow"
+              "icon": "lucide-file",
+              "title": "LAN (Local Area Network)"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -251,11 +248,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "908be0840990138e",
+  "active": "07da2d8f6c6f0d58",
   "lastOpenFiles": [
-    "Networking ccna (Cisco )/Fundamentals/LAN (Local Area Network).md",
-    "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
     "Networking ccna (Cisco )/Imanges/Internet Network Flow.canvas",
+    "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
+    "Networking ccna (Cisco )/Fundamentals/LAN (Local Area Network).md",
     "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
     "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
     "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
