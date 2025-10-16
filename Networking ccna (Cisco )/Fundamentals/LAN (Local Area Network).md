@@ -45,8 +45,8 @@ graph LR
 		1. When destination's mac address does not known.
 		2. When Multicast get involved.
 		3. When APR sends to broadcast mac address to switch.
-		4. We can connect multiple switch in same environment.
-		5. Ask doubt, single switch can support subnet or not? Yes
+	4. We can connect multiple switch in same environment.
+	5. Ask doubt, single switch can support subnet or not? Yes
 
 ```mermaid
 graph TD
@@ -70,4 +70,5 @@ graph TD
  #### **Responsibilities
  1. Forward request to neighbour subnet/network.
  2. 
- 
+
+// Todo future.....

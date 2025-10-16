@@ -11,7 +11,7 @@
 2. **WAN ()** -
 3. MAN () -
 4. **WAP ()** -
-5. WLAN () -
+5. VLAN () -
 
 #### **Internet
 
