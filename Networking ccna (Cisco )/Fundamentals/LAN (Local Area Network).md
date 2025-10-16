@@ -65,4 +65,5 @@ graph TD
 ```
 
 #### **Router
-- 
+- Router passthrough the ip to modem of the same network or connected master router to finds the mac address of the destination ip.
+- It also use broadcast when DHCP (Dynamic Host Configuration Protocol) does not knows ip.
