@@ -44,7 +44,9 @@ graph LR
 	3. There three reason switch broadcast,
 		1. When destination's mac address does not known.
 		2. When Multicast get involved.
-		3. When APR sen
+		3. When APR sends to broadcast mac address to switch.
+		4. We can connect multiple switch in same environment.
+		5. Ask doubt, single switch can support subnet or not?
 
 ```mermaid
 graph TD
