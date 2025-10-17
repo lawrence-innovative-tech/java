@@ -90,3 +90,72 @@ graph TD
  2. 
 
 // Todo future.....
+
+#### **Load balancing
+``` mermaid
+flowchart TD
+    subgraph A [Client Tier]
+        C1[User Browser]
+        C2[Mobile App]
+        C3[API Client]
+    end
+
+    subgraph B [Layer 1: Global Load Balancer]
+        GSLB[Global Server<br>Load Balancer<br>DNS/GSLB]
+    end
+
+    subgraph C [Web Tier]
+        LB1[L7/HTTP Load Balancer]
+        
+        subgraph WebServers
+            WS1[Web Server 1<br>NGINX/Apache]
+            WS2[Web Server 2<br>NGINX/Apache]
+            WS3[Web Server N...]
+        end
+    end
+
+    subgraph D [Application Tier]
+        LB2[L4/TCP Load Balancer]
+        
+        subgraph AppServers
+            AS1[App Server 1<br>Node.js/Java]
+            AS2[App Server 2<br>Node.js/Java]
+            AS3[App Server N...]
+        end
+    end
+
+    subgraph E [Data Tier]
+        LB3[Database Proxy/LB]
+        
+        subgraph Databases
+            PRIMARY[("Primary DB<br>Read/Write")]
+            REPLICA1[("Replica 1<br>Read Only")]
+            REPLICA2[("Replica 2<br>Read Only")]
+        end
+    end
+
+    A --> GSLB
+    GSLB --> LB1
+    LB1 --> WS1
+    LB1 --> WS2
+    LB1 --> WS3
+    
+    WS1 --> LB2
+    WS2 --> LB2
+    WS3 --> LB2
+    
+    LB2 --> AS1
+    LB2 --> AS2
+    LB2 --> AS3
+    
+    AS1 --> LB3
+    AS2 --> LB3
+    AS3 --> LB3
+    
+    LB3 --> PRIMARY
+    LB3 --> REPLICA1
+    LB3 --> REPLICA2
+```
+
+
+
