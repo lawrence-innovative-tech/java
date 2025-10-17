@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"9de53a740283a2cc","x":-390,"y":-300,"width":250,"height":60,"type":"text","text":"Pc (Personal Computer)"},
+		{"id":"9de53a740283a2cc","type":"text","text":"Pc (Personal Computer)","x":-390,"y":-300,"width":250,"height":60},
 		{"id":"0579ddaa99b8d53d","type":"text","text":"Switch (It connected with multiple computer)","x":80,"y":-300,"width":250,"height":60},
 		{"id":"110613a95dcd1ca5","type":"text","text":"Router (Connects Multiple Switch)","x":80,"y":-180,"width":250,"height":60},
 		{"id":"dcb837207b8e00d4","type":"text","text":"Firewall (Its secure part)","x":-390,"y":-180,"width":250,"height":60},

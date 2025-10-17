@@ -1,7 +1,18 @@
+#### **Overview
+
+[[Internet Network Flow.canvas|Internet Network Flow]]
+
 #### **Network
 - Network is one or more computer or devices (printer, etc.. ) get connect together via cable or Wi-Fi in LAN (Local Area Network).
 - E.x. Home, office like with in circle.
-- [[Network Types|Types of Network.]]
+
+#### **Types of Network
+1. [[LAN (Local Area Network)|LAN]] -
+2. **WAN ()** -
+3. MAN () -
+4. **WAP ()** -
+5. VLAN () -
+
 #### **Internet
 
 - Internet break down
