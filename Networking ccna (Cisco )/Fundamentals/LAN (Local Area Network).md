@@ -5,9 +5,10 @@
 2. [[#Switch|Switch]]
 3. Router
 4. Firewall
-5. Modem
-6. Fiber
-7. Outside Network or Internet
+5. Gateway
+6. Modem
+7. Fiber
+8. Outside Network or Internet
 
 #### **Hub
 - Hub is get connected with multiple computers and devices together,  whenever the Signal or message from source ip it broadcast to all the connected devices get back from only destination Ip's devices, and it's not store that ip and mac address of the devices. This happens every time.
