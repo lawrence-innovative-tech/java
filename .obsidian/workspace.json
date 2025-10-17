@@ -13,44 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 Java Fundamentals"
-            }
-          },
-          {
-            "id": "a32640f3af8c3de1",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "b247634f920363ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0 JAVA ROADMAP"
-            }
-          },
-          {
-            "id": "7a80be4af0e1edee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
                 "mode": "source",
                 "source": false
@@ -60,49 +22,7 @@
             }
           },
           {
-            "id": "9b62929b4de1c78f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 Java Fundamentals"
-            }
-          },
-          {
-            "id": "06c4afafab9ad1eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 Java Fundamentals"
-            }
-          },
-          {
-            "id": "cf5042f44c57fc16",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Basics of Networking"
-            }
-          },
-          {
-            "id": "bc59ebf7f95a4db8",
+            "id": "4098718eefa24526",
             "type": "leaf",
             "state": {
               "type": "canvas",
@@ -117,9 +37,59 @@
               "icon": "lucide-layout-dashboard",
               "title": "Internet Network Flow"
             }
+          },
+          {
+            "id": "422b6a25045f636c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "65c9a8a6b2d6f355",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.14"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.14"
+            }
+          },
+          {
+            "id": "908be0840990138e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Basics of Networking"
+            }
+          },
+          {
+            "id": "07da2d8f6c6f0d58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking ccna (Cisco )/Fundamentals/LAN (Local Area Network).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LAN (Local Area Network)"
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -176,7 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 246.5
+    "width": 300
   },
   "right": {
     "id": "5e3776668bc108a9",
@@ -278,38 +248,42 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bc59ebf7f95a4db8",
+  "active": "07da2d8f6c6f0d58",
   "lastOpenFiles": [
+    "Mixed topics for interview preparation/(SDLC) Software Development Life Cycle.md",
     "Networking ccna (Cisco )/Fundamentals/LAN (Local Area Network).md",
     "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
     "Networking ccna (Cisco )/Imanges/Internet Network Flow.canvas",
-    "Networking ccna (Cisco )/Imanges",
-    "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
     "Networking ccna (Cisco )/Fundamentals/URL (Uniform Resource Locator).md",
-    "Networking ccna (Cisco )/Fundamentals/Network Types.md",
-    "Internet Network Flow.canvas",
-    "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
     "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
-    "Networking ccna (Cisco )/Untitled.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
+    "Networking ccna (Cisco )/Imanges",
     "Networking ccna (Cisco )/HTTP Version.md",
+    "Mixed topics for interview preparation",
+    "Networking ccna (Cisco )/Untitled.md",
     "Networking ccna (Cisco )/Fundamentals",
+    "JAVA/0 Interview Preparation/DB.md",
     "Networking ccna (Cisco )",
     "JAVA/0 Interview Preparation/Matchinfo DB.md",
-    "JAVA/0 Interview Preparation/DB.md",
-    "JAVA/0 Interview Preparation/2 Beyond Java Topics.md",
-    "JAVA/0 Interview Preparation/1 Springboot RoadMap.md",
-    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
-    "Mixed topics for interview preparation/(SDLC) Software Development Life Cycle.md",
-    "Mixed topics for interview preparation",
-    "JAVA/10 Images/Beyond-java-topics.png",
-    "JAVA/1 Fundamental & JVM Internals & Performance",
-    "JAVA/10 Images/Springboot-roadmap.png",
-    "JAVA/0 Interview Preparation",
-    "JAVA/10 Images/Java-roadmap.png",
-    "JAVA/10 Images/JavaClassLoader-Architecture.webp",
     "JAVA/5 Classloader/Java Class loader.md",
-    "JAVA",
+    "JAVA/5 Classloader",
+    "JAVA/10 Images/Springboot-roadmap.png",
+    "JAVA/10 Images/JavaClassLoader-Architecture.webp",
+    "JAVA/10 Images/Java-roadmap.png",
+    "JAVA/10 Images/Beyond-java-topics.png",
     "JAVA/10 Images",
-    "JAVA/5 Classloader"
+    "JAVA/1 Fundamental & JVM Internals & Performance",
+    "Untitled.canvas",
+    "JAVA/0 Interview Preparation/1 Springboot RoadMap.md",
+    "JAVA/2 Images/Springboot-roadmap.png",
+    "JAVA/0 Interview Preparation/2 Beyond Java Topics.md",
+    "JAVA/0 Interview Preparation",
+    "JAVA/2 Images/Java-roadmap.png",
+    "JAVA/2 Images/Beyond-java-topics.png",
+    "JAVA/2 Images/JavaClassLoader-Architecture.webp",
+    "JAVA/1 Classloader/Java Class loader.md",
+    "JAVA",
+    "JAVA/2 Images"
   ]
 }
