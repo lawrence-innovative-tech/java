@@ -48,20 +48,37 @@ graph LR
 	4. We can connect multiple switch in same environment.
 	5. Ask doubt, single switch can support subnet or not? Yes
 
-```mermaid
+
+```mermaid copy
 graph TD
-    c1[Computer1] -->|Send message to <br> Computer4| A[ARP Packet]
-    A --> H[switch] 
+    c1[Computer1] -->|Send message to <br> Computer4| A[ARP Request Packet]
+    A --> CAM[Switch Receives Packet]
+    CAM --> CT{Check CAM Table<br/>MAC of Computer4?}
+    
+    CT -->|Present| F[Forward to Computer4's Port]
+    CT -->|Not Present| H[Broadcast ARP Request]
+    
+    F --> c4[Computer4]
     H -->|Broadcast| c2[Computer2]
     H -->|Broadcast| c3[Computer3]
     H -->|Broadcast| c4[Computer4]
-
-    c4 -->|Replied IP & Mac| H
-     H --> |Replied| A
-     A --> |Replied| c1[Computer1]
-     
+    
+    c2 -->|Not my IP| D1{Drop Packet}
+    c3 -->|Not my IP| D2{Drop Packet}
+    c4 -->|My IP!| R[Prepare ARP Reply]
+    
+    D1 -->|End| E1[End]
+    D2 -->|End| E2[End]
+    
+    R -->|Send ARP Reply| H2[Switch]
+    H2 -->|Learn MAC & Update CAM| LU[Update CAM Table]
+    LU -->|Forward to Computer1| c1
+    
     style c1 fill:#ffebee
     style c4 fill:#e8f5e8
+    style R fill:#e8f5e8
+    style CT fill:#fff3e0
+    style LU fill:#e3f2fd
 ```
 
 #### **Router
