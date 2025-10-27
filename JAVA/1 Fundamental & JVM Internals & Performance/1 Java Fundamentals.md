@@ -20,6 +20,22 @@
 
 ### **Architecture of Java 
 
+``` java
+
+Source code (.java) // Java file
+	↓
+Java Compiler (Javac) // Done by JDK
+	↓
+ByteCode Conversation // JDK part (For Platform Independent)
+	↓
+JVM (Java Virtual Machine) // Platform Specific to convert(bytecode to binary code) & execute.
+	↓
+Native Machine Code // Binary code (0's & 1's)
+	↓
+Execution
+
+```
+
 #### **JDK, JRE and JVM
 
 **JDK ( Java Development Kit )
@@ -27,12 +43,11 @@
 JDK is cross platform Software Development tool to building a java application. it's a Kit ( or a Package), it contains all the necessary to build and executable java tools, libraries, compile, debug, and run.
 
 **JDK TOOLS
-javac (Java Compiler ) - Convert human readable ( High level language ) to Machine or java executable ( Low level language [[#**Binary Code]]), without javac tool we can't convert executable format.
+javac (Java Compiler ) - Convert human readable ( High level language ) to Machine or java executable ( Low level language [[#**Byte Code|ByteCode]]), without javac tool we can't convert executable format.
 
 **java (Launcher) - 
 
-
-#### **Binary Code 
+#### **Byte Code 
 	Binary code is low machine read & executable code, in 0's and 1's format.
 ### **JVM Internals & Performance 
-test 
+ 

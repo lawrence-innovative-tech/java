@@ -107,12 +107,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "1 Java Fundamentals"
             }
           }
         ],
@@ -275,8 +275,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "88609105b588e0fe",
+  "active": "bc59ebf7f95a4db8",
   "lastOpenFiles": [
+    "README.md",
     "Networking ccna (Cisco ) 1/Imanges/Internet Network Flow.canvas",
     "Networking ccna (Cisco ) 1/Fundamentals/URL (Uniform Resource Locator).md",
     "Networking ccna (Cisco ) 1/Fundamentals/LAN (Local Area Network).md",
