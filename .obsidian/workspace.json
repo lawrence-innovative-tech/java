@@ -107,12 +107,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking ccna (Cisco )/Fundamentals/LAN (Local Area Network).md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LAN (Local Area Network)"
+              "title": "README"
             }
           }
         ],
@@ -275,14 +275,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bc59ebf7f95a4db8",
+  "active": "88609105b588e0fe",
   "lastOpenFiles": [
-    "Networking ccna (Cisco )/Imanges/Internet Network Flow.canvas",
+    "Networking ccna (Cisco ) 1/Imanges/Internet Network Flow.canvas",
+    "Networking ccna (Cisco ) 1/Fundamentals/URL (Uniform Resource Locator).md",
+    "Networking ccna (Cisco ) 1/Fundamentals/LAN (Local Area Network).md",
+    "Networking ccna (Cisco ) 1/Fundamentals/Basics of Networking.md",
+    "Networking ccna (Cisco ) 1/Untitled.md",
+    "Networking ccna (Cisco ) 1/Imanges",
+    "Networking ccna (Cisco ) 1/HTTP Version.md",
+    "Networking ccna (Cisco ) 1/Fundamentals",
+    "Networking ccna (Cisco ) 1",
+    "Untitled.base",
+    "Untitled 1.base",
+    "Networking ccna (Cisco )/Fundamentals/URL (Uniform Resource Locator).md",
     "Networking ccna (Cisco )/Fundamentals/LAN (Local Area Network).md",
+    "Networking ccna (Cisco )/Imanges/Internet Network Flow.canvas",
     "Networking ccna (Cisco )/Fundamentals/Basics of Networking.md",
     "Networking ccna (Cisco )/Imanges",
     "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
-    "Networking ccna (Cisco )/Fundamentals/URL (Uniform Resource Locator).md",
     "Networking ccna (Cisco )/Fundamentals/Network Types.md",
     "Internet Network Flow.canvas",
     "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
@@ -301,12 +312,8 @@
     "JAVA/10 Images/Beyond-java-topics.png",
     "JAVA/1 Fundamental & JVM Internals & Performance",
     "JAVA/10 Images/Springboot-roadmap.png",
-    "JAVA/0 Interview Preparation",
     "JAVA/10 Images/Java-roadmap.png",
     "JAVA/10 Images/JavaClassLoader-Architecture.webp",
-    "JAVA/5 Classloader/Java Class loader.md",
-    "JAVA",
-    "JAVA/10 Images",
-    "JAVA/5 Classloader"
+    "JAVA/5 Classloader/Java Class loader.md"
   ]
 }
