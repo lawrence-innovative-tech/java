@@ -62,5 +62,19 @@ public class TokenPrinter {
 ```
 
 #### **2. Syntax Analysis (AST - Abstract Syntax Tree)
-- After generated token, It will create the AST, It's intermediate for further processing.
+- After generated token, It will create the AST for code structure in hierarchical representation, and AST an intermediator of following process.
+- While build the AST to know the compiler in syntax error, like missing semicolon, unbalanced parentheses.
+#### **3. Semantic Analysis (Logical Validation)
+- The complier complete generation of AST, it will start process to validate logic or purpose of the application.
+- It will traverse the AST tree to check the flow of logic.
+	- **Symbol Resolution -** It identify the reference, which imported or external libraries.
+	- **Type Checking -** It will check type compatible.
+		 1. int store only integer value not string value
+		 2. ParentClass object = new ChildClass();
+			- object.test();
+			 - Here, child class one method which not in parent class but the object creating for child class in runtime, but compile time which check only parent class.
+	- **Flow Checking -** it find out unreachable code, uninitialized variables, or definite assignment rules.
+- Here, the code get optimization like, when we call static variable using this or object reference it update the AST in relevant class name.
+- If code has annotation, here checks and implemented the annotation functionality like (Lombok).
+#### **4. Byte Code Generation
 - 
