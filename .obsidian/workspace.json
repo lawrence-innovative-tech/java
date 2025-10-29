@@ -107,12 +107,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
+                "file": "JAVA/1 Fundamental & JVM Internals & Performance/Java Compilation Process.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 Java Fundamentals"
+              "title": "Java Compilation Process"
             }
           }
         ],
@@ -277,6 +277,8 @@
   },
   "active": "bc59ebf7f95a4db8",
   "lastOpenFiles": [
+    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/Java Compilation Process.md",
     "README.md",
     "Networking ccna (Cisco ) 1/Imanges/Internet Network Flow.canvas",
     "Networking ccna (Cisco ) 1/Fundamentals/URL (Uniform Resource Locator).md",
@@ -307,7 +309,6 @@
     "JAVA/0 Interview Preparation/DB.md",
     "JAVA/0 Interview Preparation/2 Beyond Java Topics.md",
     "JAVA/0 Interview Preparation/1 Springboot RoadMap.md",
-    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
     "Mixed topics for interview preparation/(SDLC) Software Development Life Cycle.md",
     "Mixed topics for interview preparation",
     "JAVA/10 Images/Beyond-java-topics.png",

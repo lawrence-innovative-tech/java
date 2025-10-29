@@ -41,13 +41,16 @@ Execution
 #### **JDK ( Java Development Kit )
 
 - JDK is cross platform Software Development tool to building a java application. it's a Kit ( or a Package), it contains all the necessary to build and executable java tools, libraries, compile, debug, and run. Without JDK, We can't create a new think but we can use precompiled using JRE.
-- JDK contains [[#**JDK TOOLS | JDK TOOLS]] + JRE.
-
+- JDK contains [[#**JDK TOOLS | JDK TOOLS]] + [[#**JRE (Java Runtime Environment)|JRE]].
 
 ##### **JDK TOOLS
-javac (Java Compiler ) - Convert human readable ( High level language ) to Machine or java executable ( Low level language [[#**Byte Code|ByteCode]]), without javac tool we can't convert executable format.
+- javac (Java Compiler ) - Convert human readable ( High level language ) to Machine or java executable ( Low level language [[#**Byte Code|ByteCode]]), without javac tool we can't convert executable format. for more [[Java Compilation Process|clarity]].
+- javadoc - Generate Java documentations
+- jvisualvm - Analysis the performance.
+#### **JRE (Java Runtime Environment)
 
-#### **JRE (J)
+- 
+
 
 #### **Byte Code 
 	Binary code is low machine read & executable code, in 0's and 1's format.
