@@ -45,6 +45,10 @@ Execution
 - javac (Java Compiler ) - Convert human readable ( High level language ) to Machine or java executable ( Low level language [[#**Byte Code|ByteCode]]), without javac tool we can't convert executable format. for more [[Java Compilation Process|clarity]].
 - javadoc - Generate Java documentations
 - jvisualvm - Analysis the performance.
+- javap - we can see JVM instruction in high-level. (e.x javap -c <class_name>, javap -v (Full overview)).
+- javac -Xprint flag - to print java code in console for highlevel.
+- Module-info.java its for only necessary package to compile and run application.
+
 #### **JRE (Java Runtime Environment)
 - JRE contains JVM + Libraries, the execution are happens in JVM, but all necessary package are supplies from JRE.
 - In Simple word, JRE is car, JVM is engine. so, without tyre car can't move.
@@ -52,7 +56,8 @@ Execution
 	1. When "JAVA <CLASS_NAME>" instruction given from user it's loads the <CLASS_NAME> from respective path.
 	2. And, Initiate the JVM to start process.
 - JRE has jvm's binary libes.
-- 
+- Module means its minimal JRE to run our application, which means it will have only necessary package to use to run application.
+- To run application using jlink command with module-info.java path.
 
 #### **Byte Code 
 - Binary code is low machine read & executable code, in 0's and 1's format.
