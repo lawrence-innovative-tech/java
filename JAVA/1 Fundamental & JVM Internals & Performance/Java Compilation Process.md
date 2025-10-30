@@ -1,3 +1,6 @@
+#### **In Future Goal
+1. Update everything in details with working examples.
+2. Bytecode is pending.
 #### **1. Lexical Analysis (Tokenization)
 - Reads a source (.java) file and stores into **char[] buffer** to generate the [[#Tokenization|Token]].
 - It's breaks code into stream of tokens such as **Keywords (Public, class, static), identifiers (variable name, sout), literal (integer literal, string literal), Symbols ({,;).
@@ -61,6 +64,9 @@ public class TokenPrinter {
 }
 ```
 
+**Run Command -** javac --add-exports jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
+ --add-exports jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED TokenPrinter.java && java --add-exports jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-expor
+ts jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED TokenPrinter
 #### **2. Syntax Analysis (AST - Abstract Syntax Tree)
 - After generated token, It will create the AST for code structure in hierarchical representation, and AST an intermediator of following process.
 - While build the AST to know the compiler in syntax error, like missing semicolon, unbalanced parentheses.
@@ -77,6 +83,6 @@ public class TokenPrinter {
 - Here, the code get optimization like, when we call static variable using this or object reference it update the AST in relevant class name.
 - If code has annotation, here checks and implemented the annotation functionality like (Lombok).
 #### **4. Byte Code Generation
-- Semantic validation completes it started to generate byte code.
+- Semantic validation completes it started to generate byte code based on JVM compliance using **Visitor pattern**.
 - // TODO - Details will update..
 
