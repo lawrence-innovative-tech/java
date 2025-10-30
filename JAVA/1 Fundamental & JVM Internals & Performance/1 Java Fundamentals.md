@@ -46,8 +46,13 @@ Execution
 - javadoc - Generate Java documentations
 - jvisualvm - Analysis the performance.
 #### **JRE (Java Runtime Environment)
+- JRE contains JVM + Libraries, the execution are happens in JVM, but all necessary package are supplies from JRE.
+- In Simple word, JRE is car, JVM is engine. so, without tyre car can't move.
+- **JVM Works
+	1. When "JAVA <CLASS_NAME>" instruction given from user it's loads the <CLASS_NAME> from respective path.
+	2. And, Initiate the JVM to start process.
+- JRE has jvm's binary libes.
 - 
-
 
 #### **Byte Code 
 - Binary code is low machine read & executable code, in 0's and 1's format.

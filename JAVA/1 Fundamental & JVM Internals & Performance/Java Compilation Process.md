@@ -67,6 +67,7 @@ public class TokenPrinter {
 **Run Command -** javac --add-exports jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED
  --add-exports jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED TokenPrinter.java && java --add-exports jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-expor
 ts jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED TokenPrinter
+
 #### **2. Syntax Analysis (AST - Abstract Syntax Tree)
 - After generated token, It will create the AST for code structure in hierarchical representation, and AST an intermediator of following process.
 - While build the AST to know the compiler in syntax error, like missing semicolon, unbalanced parentheses.
