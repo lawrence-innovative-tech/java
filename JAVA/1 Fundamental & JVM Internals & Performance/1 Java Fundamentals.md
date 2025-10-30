@@ -21,7 +21,6 @@
 ### **Architecture of Java 
 
 ``` java
-
 Source code (.java) // Java file
 	↓
 Java Compiler (Javac) // Done by JDK
@@ -33,7 +32,6 @@ JVM (Java Virtual Machine) // Platform Specific to convert(bytecode to binary co
 Native Machine Code // Binary code (0's & 1's)
 	↓
 Execution
-
 ```
 
 #### **JDK, JRE and JVM
@@ -48,11 +46,14 @@ Execution
 - javadoc - Generate Java documentations
 - jvisualvm - Analysis the performance.
 #### **JRE (Java Runtime Environment)
-
 - 
 
 
 #### **Byte Code 
-	Binary code is low machine read & executable code, in 0's and 1's format.
+- Binary code is low machine read & executable code, in 0's and 1's format.
 ### **JVM Internals & Performance 
- 
+
+
+#### **Question Bank
+1. JDK is enough to create jar file then what is the purpose of Maven the build tool and some plugins in needs to build jar why?
+2. The java packages are in JRE we are using java api to our application, so where it can load and how its represented in .class file.

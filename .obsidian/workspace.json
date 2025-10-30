@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
+                "file": "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0 Fundamentals"
+              "title": "1 Java Fundamentals"
             }
           },
           {
@@ -116,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -275,10 +275,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bc59ebf7f95a4db8",
+  "active": "7a80be4af0e1edee",
   "lastOpenFiles": [
-    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
     "JAVA/1 Fundamental & JVM Internals & Performance/Java Compilation Process.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
     "README.md",
     "Networking ccna (Cisco ) 1/Imanges/Internet Network Flow.canvas",
     "Networking ccna (Cisco ) 1/Fundamentals/URL (Uniform Resource Locator).md",
@@ -299,7 +300,6 @@
     "Networking ccna (Cisco )/Fundamentals/Basics of Internet.md",
     "Networking ccna (Cisco )/Fundamentals/Network Types.md",
     "Internet Network Flow.canvas",
-    "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
     "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
     "Networking ccna (Cisco )/Untitled.md",
     "Networking ccna (Cisco )/HTTP Version.md",
