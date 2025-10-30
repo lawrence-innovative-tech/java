@@ -57,3 +57,4 @@ Execution
 #### **Question Bank
 1. JDK is enough to create jar file then what is the purpose of Maven the build tool and some plugins in needs to build jar why?
 2. The java packages are in JRE we are using java api to our application, so where it can load and how its represented in .class file.
+3. Semantic analysis will checks global variable's default value is optional, but local variable's default value should be present. why?

@@ -77,4 +77,6 @@ public class TokenPrinter {
 - Here, the code get optimization like, when we call static variable using this or object reference it update the AST in relevant class name.
 - If code has annotation, here checks and implemented the annotation functionality like (Lombok).
 #### **4. Byte Code Generation
-- 
+- Semantic validation completes it started to generate byte code.
+- // TODO - Details will update..
+
