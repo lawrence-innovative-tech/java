@@ -57,7 +57,7 @@ Execution
 	2. And, Initiate the JVM to start process.
 - JRE has jvm's binary libes.
 - Module means its minimal JRE to run our application, which means it will have only necessary package to use to run application.
-- To run application using jlink command with module-info.java path.
+- To run application using jlink command with [[#**Module|module-info.java]] path.
 
 #### **Module
  - Module from Java 9 and 9+.
@@ -68,6 +68,29 @@ Execution
 	 3. exports - What are packages to be expose to other packages has access this package.
 	 4. open - It's allow reflection access (like spring framework and JSON libs) .
 	 5. uses / provides - For service loading (advanced).
+``` java
+myapp/
+├── com/
+│   └── example/
+│       └── Greeting.java
+└── module-info.java
+```
+
+``` java
+module com.example.myapp {
+    exports com.example;        // Allow others to use com.example package
+    requires java.base;         // Automatically added by compiler (optional)
+}
+
+// Compile Command
+javac -d mods/com.example.myapp \
+    src/com.example.myapp/com/example/Greeting.java \
+    src/com.example.myapp/module-info.java
+    
+// Run Command
+java --module-path mods \
+     --module com.example.myapp/com.example.Main
+```
 #### **Byte Code 
 - Binary code is low machine read & executable code, in 0's and 1's format.
 ### **JVM Internals & Performance 

@@ -37,26 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
+                "file": "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0 JAVA ROADMAP"
-            }
-          },
-          {
-            "id": "06c4afafab9ad1eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mixed topics for interview preparation/Türkiye Perso Script Producer.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Türkiye Perso Script Producer"
+              "title": "1 Java Fundamentals"
             }
           },
           {
@@ -84,7 +70,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -243,13 +229,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "06c4afafab9ad1eb",
+  "active": "b247634f920363ba",
   "lastOpenFiles": [
-    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
-    "Mixed topics for interview preparation/Türkiye Perso Script Producer.md",
-    "JAVA/1 Fundamental & JVM Internals & Performance/Java Compilation Process.md",
-    "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
     "JAVA/1 Fundamental & JVM Internals & Performance/0 Fundamentals.md",
+    "JAVA/0 Interview Preparation/0 JAVA ROADMAP.md",
+    "Mixed topics for interview preparation/Türkiye Perso Script Producer.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/1 Java Fundamentals.md",
+    "JAVA/1 Fundamental & JVM Internals & Performance/Java Compilation Process.md",
     "README.md",
     "Networking ccna (Cisco ) 1/Imanges/Internet Network Flow.canvas",
     "Networking ccna (Cisco ) 1/Fundamentals/URL (Uniform Resource Locator).md",
