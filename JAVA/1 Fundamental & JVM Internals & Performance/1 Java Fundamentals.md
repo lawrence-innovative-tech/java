@@ -91,6 +91,9 @@ javac -d mods/com.example.myapp \
 java --module-path mods \
      --module com.example.myapp/com.example.Main
 ```
+
+- **Ref -** https://grok.com/c/4c1cae52-93e8-4440-8da4-c1d48e3ccabf
+
 #### **Byte Code 
 - Binary code is low machine read & executable code, in 0's and 1's format.
 ### **JVM Internals & Performance 
