@@ -59,6 +59,15 @@ Execution
 - Module means its minimal JRE to run our application, which means it will have only necessary package to use to run application.
 - To run application using jlink command with module-info.java path.
 
+#### **Module
+ - Module from Java 9 and 9+.
+ - **Before Java 9 -** JRE is loads all the jar which in rt.jar.
+ - **From Java 9 -** Java introduced Module for required dependency and control the package, jars, with encapsulate.
+	 1. Module-info.java - It's a file its contains below context.
+	 2. required - Here, we can mention what are the packages to be needs to run this application.
+	 3. exports - What are packages to be expose to other packages has access this package.
+	 4. open - It's allow reflection access (like spring framework and JSON libs) .
+	 5. uses / provides - For service loading (advanced).
 #### **Byte Code 
 - Binary code is low machine read & executable code, in 0's and 1's format.
 ### **JVM Internals & Performance 
