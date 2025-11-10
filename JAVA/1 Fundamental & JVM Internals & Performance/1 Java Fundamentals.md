@@ -66,7 +66,7 @@ Execution
 	 1. Module-info.java - It's a file its contains below context.
 	 2. required - Here, we can mention what are the packages to be needs to run this application.
 	 3. exports - What are packages to be expose to other packages has access this package.
-	 4. open - It's allow reflection access (like spring framework and JSON libs) .
+	 4. open - It's allow reflection access (like spring framework and JSON libs).
 	 5. uses / provides - For service loading (advanced).
 ``` java
 myapp/
