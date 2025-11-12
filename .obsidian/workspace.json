@@ -46,18 +46,6 @@
             }
           },
           {
-            "id": "5cbf3969c57a52f7",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.10.3"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.10.3"
-            }
-          },
-          {
             "id": "cf5042f44c57fc16",
             "type": "leaf",
             "state": {
@@ -241,7 +229,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5cbf3969c57a52f7",
+  "active": "cf5042f44c57fc16",
   "lastOpenFiles": [
     "Mixed topics for interview preparation/Türkiye Perso Script Producer.md",
     "JAVA/1 Fundamental & JVM Internals & Performance/Java Compilation Process.md",
