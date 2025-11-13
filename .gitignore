@@ -1,0 +1,11 @@
+# Ignore local UI/layout files
+.obsidian/workspace.json
+.obsidian/appearance.json
+.obsidian/workspace-mobile.json
+
+# Ignore plugin cache data
+.obsidian/plugins/obsidian-git/data.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db
