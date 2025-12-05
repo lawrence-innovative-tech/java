@@ -13,6 +13,11 @@
 - There are two type generic,
 	1. Bound Type Parameter
 		1. [[#Upper Bound Type Parameter (Producer Extends)|Upper Bound Type Parameter (Producer Extends)]]
-		2. Lower Bound Type Parameter (Super Consumer)
+		2. [[#Lower Bound Type Parameter (Super Consumer)|Lower Bound Type Parameter (Super Consumer)]]
 	2. Unbound Type Parameter (?)
 #### **Upper Bound Type Parameter (Producer Extends)
+- \<? extends TinyUrl> ? representation to class.
+	- A class is extends the TinyUrl, so a class representation is subclass, each subclass vary from other, so here allowed only to read. 
+#### **Lower Bound Type Parameter (Super Consumer)
+- \<? super TinyUrl> ? representation to class.
+	- A class's super class is TinyUrl, so that under the TinyUrl we can add all the sub classes to that list. it allows to write.
