@@ -9,6 +9,7 @@
 	- K - key
 	- V - Value
 	- N - number
+	- S - Supplier
 - Generic bound using PESC (Producer Extends, Super Consumer).
 - There are two type generic,
 	1. Bound Type Parameter
