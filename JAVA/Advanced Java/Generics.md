@@ -17,8 +17,10 @@
 		2. [[#Lower Bound Type Parameter (Super Consumer)|Lower Bound Type Parameter (Super Consumer)]]
 	2. Unbound Type Parameter (?)
 #### **Upper Bound Type Parameter (Producer Extends)
-- \<? extends TinyUrl> ? representation to class.
-	- A class is extends the TinyUrl, so a class representation is subclass, each subclass vary from other, so here allowed only to read. 
+- \<? extends T> ? representation to class.
+	- T representation class. which are classes extends T only allows.
+	- A class is extends T, so a class is subclass, each subclass vary from other subclasses, so that only allow to read. 
 #### **Lower Bound Type Parameter (Super Consumer)
-- \<? super TinyUrl> ? representation to class.
-	- A class's super class is TinyUrl, so that under the TinyUrl we can add all the sub classes to that list. it allows to write.
+- \<? super T> ? representation to class.
+	- T class or T class's super can allow to write data. so, that other subclass can use that without ClassCastException.
+	- When parent class are inherited by child classes so there also create by problems. So We can add subclasses also.
