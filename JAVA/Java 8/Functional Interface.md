@@ -7,13 +7,14 @@
 - @FunctionalInterface annotation to define the class it functional interface. but not recommended.
 #### **Predefined Functional Interfaces
 
-1. **Predicate Functional Interface
-	1. 
+1. [[#**Predefined Functional Interfaces|Predicate Functional Interface]]
 2. **Function Functional Interface
 3. **Consumer Functional Interface
 4. **Supplier Functional Interface 
 5. 
 
+#### **Predicate Functional Interface
+- 
 
 
 --
