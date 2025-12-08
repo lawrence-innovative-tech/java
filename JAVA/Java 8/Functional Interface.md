@@ -14,8 +14,9 @@
 5. 
 
 #### **Predicate Functional Interface
-- Predicate is used to test the condition, it's return 'true' or 'false'.
-- We can combine predicate functional interface between below methods
+- Predicate is used to test the condition, it's return 'true' or 'false'. 
+- It used for filter steams pipeline to optimized approaches. boolean test() used.
+- We can combine predicate functional interface between below methods,
 	1. default methods for Logical operator functionality.
 		1. and() 
 		2. or()
@@ -29,6 +30,17 @@
 	3. dropWhile()
 	4. allMatch(), anyMatch(), nonMatch().
 - **Bi-Predicate**
-	- 
+	- It's allows two condition checks.
+	- It have only above default methods.
+
+- **Ref Code -** https://github.com/lawrence-innovative-tech/java-code-review/blob/main/src/main/java/org/example/functionalInterface/predefined/PredicateFunctionalInterface.java
 #### **Function Functional Interface
-- 
+- It convert 'T' generic type to 'R' generic type. And Returns 'R' generic.
+- 'T' .apply() method used to change.
+- Default methods :
+	1. 
+
+
+
+
+- **Ref Code -** https://github.com/lawrence-innovative-tech/java-code-review/blob/main/src/main/java/org/example/functionalInterface/predefined/FunctionFunctionalInterface.java
