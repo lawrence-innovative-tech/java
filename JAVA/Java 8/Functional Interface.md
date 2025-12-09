@@ -36,11 +36,23 @@
 - **Ref Code -** https://github.com/lawrence-innovative-tech/java-code-review/blob/main/src/main/java/org/example/functionalInterface/predefined/PredicateFunctionalInterface.java
 #### **Function Functional Interface
 - It convert 'T' generic type to 'R' generic type. And Returns 'R' generic.
-- 'T' .apply() method used to change.
+- 'T' .apply() method used to change. 'T' type to 'R' type.
 - Default methods :
-	1. 
-
-
-
+	1. compost() - before process the data.
+	2. andThen() - after process the data.
+- Static Methods :
+	1. identity()   - natural process it return same input as output.
+- Stream api methods to be used:
+	1. map & co and flatMap & co.
+- Bifunction interface perform two input and return the output. Here, there is no static methods only default methods. that is compose() and andThen() methods.
 
 - **Ref Code -** https://github.com/lawrence-innovative-tech/java-code-review/blob/main/src/main/java/org/example/functionalInterface/predefined/FunctionFunctionalInterface.java
+
+#### **Consumer Functional Interface
+- Consumer collects data, and process some operation but doesn't returns anything.
+- accept() method perform the operation.
+- andThen() methods first process current operation followed by after methods.
+- Stream methods, peer(), foreach(), foreachOrdered().
+
+#### **Supplier Functional Interface
+- 
