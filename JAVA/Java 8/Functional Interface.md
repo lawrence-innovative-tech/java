@@ -55,4 +55,6 @@
 - Stream methods, peer(), foreach(), foreachOrdered().
 
 #### **Supplier Functional Interface
-- 
+- Returns output without consuming the inputs. it like opposite of consumer functional interface.
+- get() to retrieve data from source, doesn't have default and static methods.
+- Streams supplier methods in collect().
