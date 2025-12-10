@@ -3,6 +3,7 @@
 - Stream is data pipeline process. 
 - Without terminal operation it not start to process.
 - Stream it used to process or manipulate the datasource without modifying the datasource.
+- If the stream runs one time it never allow to run again that stream.
 
 ##### **Three Major part of stream
 1. [[#**Several types to create stream object,|Creation part]]
@@ -65,3 +66,26 @@
 |**gather**|`<R> Stream<R> gather(Gatherer<? super T, ?, R> gatherer)`|Applies a custom gatherer for complex transformations (experimental in earlier previews).|Java 24|
 
 ##### **Terminal Stream
+- When terminal operation only start the execution of stream pipeline, and if terminal operation has involved streams has end.
+- Some Terminal operation list,
+
+| Operation        | Signature                                                                                              | Return Type   | Description                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------------------ | ------------- | ---------------------------------------------------------------------------- |
+| `forEach`        | `void forEach(Consumer<? super T> action)`                                                             | `void`        | Performs an action for each element (nondeterministic in parallel streams).  |
+| `forEachOrdered` | `void forEachOrdered(Consumer<? super T> action)`                                                      | `void`        | Performs an action for each element, respecting encounter order.             |
+| `toArray`        | `Object[] toArray()`                                                                                   | `Object[]`    | Returns a runtime Object array of stream elements.                           |
+| `toArray`        | `<A> A[] toArray(IntFunction<A[]> generator)`                                                          | `A[]`         | Returns an array using a provided generator function.                        |
+| `reduce`         | `Optional<T> reduce(BinaryOperator<T> accumulator)`                                                    | `Optional<T>` | Reduces elements to a single value using an accumulator (associative).       |
+| `reduce`         | `T reduce(T identity, BinaryOperator<T> accumulator)`                                                  | `T`           | Reduces with an identity value and accumulator.                              |
+| `reduce`         | `<U> U reduce(U identity, BiFunction<U, ? super T, U> accumulator, BinaryOperator<U> combiner)`        | `U`           | Reduces with identity, accumulator, and combiner (for parallel).             |
+| `collect`        | `<R, A> R collect(Collector<? super T, A, R> collector)`                                               | `R`           | Accumulates into a result using a Collector (e.g., `toList()`, `joining()`). |
+| `collect`        | `<R> R collect(Supplier<R> supplier, BiConsumer<R, ? super T> accumulator, BiConsumer<R, R> combiner)` | `R`           | Mutable reduction with explicit supplier, accumulator, and combiner.         |
+| `toList`         | `default List<T> toList()`                                                                             | `List<T>`     | Collects elements into an unmodifiable `List` (Java 16+).                    |
+| `min`            | `Optional<T> min(Comparator<? super T> comparator)`                                                    | `Optional<T>` | Returns the minimum element per comparator (empty if stream empty).          |
+| `max`            | `Optional<T> max(Comparator<? super T> comparator)`                                                    | `Optional<T>` | Returns the maximum element per comparator (empty if stream empty).          |
+| `count`          | `long count()`                                                                                         | `long`        | Returns the number of elements in the stream.                                |
+| `anyMatch`*      | `boolean anyMatch(Predicate<? super T> predicate)`                                                     | `boolean`     | Returns `true` if any element matches the predicate.                         |
+| `allMatch`*      | `boolean allMatch(Predicate<? super T> predicate)`                                                     | `boolean`     | Returns `true` if all elements match (or stream empty).                      |
+| `noneMatch`*     | `boolean noneMatch(Predicate<? super T> predicate)`                                                    | `boolean`     | Returns `true` if no elements match (or stream empty).                       |
+| `findFirst`*     | `Optional<T> findFirst()`                                                                              | `Optional<T>` | Returns the first element (respects order).                                  |
+| `findAny`*       | `Optional<T> findAny()`                                                                                | `Optional<T>` | Returns any element (nondeterministic, good for parallel).                   |
