@@ -5,11 +5,13 @@
 	- e.g. List\<String> becomes list in runtime, after semantics validates the type it start to change erasure.
 	- Springboot JPA  & @RequestBody can handles **Spring Jackson json deserialization validate methods parameter directly using reflection.** because during compilation erasure happens this change generic type to raw or Object.
 - T E K V N - these are generic name
+	- T - Type Reference
 	- E - element 
 	- K - key
 	- V - Value
 	- N - number
 	- S - Supplier
+	- ? - Unknown Reference
 - Generic bound using PESC (Producer Extends, Super Consumer).
 - There are two type generic,
 	1. Bound Type Parameter
