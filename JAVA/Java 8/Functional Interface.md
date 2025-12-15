@@ -11,7 +11,6 @@
 2. **Function Functional Interface
 3. **Consumer Functional Interface
 4. **Supplier Functional Interface 
-5. 
 
 #### **Predicate Functional Interface
 - Predicate is used to test the condition, it's return 'true' or 'false'. 
@@ -52,7 +51,7 @@
 - Consumer collects data, and process some operation but doesn't returns anything.
 - accept() method perform the operation.
 - andThen() methods first process current operation followed by after methods.
-- Stream methods, peer(), foreach(), foreachOrdered().
+- Stream methods, peek(), foreach(), foreachOrdered().
 
 #### **Supplier Functional Interface
 - Returns output without consuming the inputs. it like opposite of consumer functional interface.
