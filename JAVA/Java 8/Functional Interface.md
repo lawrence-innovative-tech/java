@@ -37,13 +37,14 @@
 - It convert 'T' generic type to 'R' generic type. And Returns 'R' generic.
 - 'T' .apply() method used to change. 'T' type to 'R' type.
 - Default methods :
-	1. compost() - before process the data.
-	2. andThen() - after process the data.
+	1. compose() - before process the data. First parameter get execute after instance get executes.
+	2. andThen() - after process the data. First instance get executes after parameter that get executes.
 - Static Methods :
 	1. identity()   - natural process it return same input as output.
 - Stream api methods to be used:
 	1. map & co and flatMap & co.
 - Bifunction interface perform two input and return the output. Here, there is no static methods only default methods. that is compose() and andThen() methods.
+- Edge Cases: If the stream is empty, only the supplier is called (followed by the finisher). For parallel streams, multiple suppliers may be invoked (one per thread).
 
 - **Ref Code -** https://github.com/lawrence-innovative-tech/java-code-review/blob/main/src/main/java/org/example/functionalInterface/predefined/FunctionFunctionalInterface.java
 
@@ -52,8 +53,20 @@
 - accept() method perform the operation.
 - andThen() methods first process current operation followed by after methods.
 - Stream methods, peek(), foreach(), foreachOrdered().
+- The collector interface have accumulator in Bi-Consumer Functional Interface.
+- Edge Cases: In parallel streams, the same container might be updated concurrently, so avoid non-atomic operations like simple increments unless using CONCURRENT. It's the most frequently called method, so optimize for performance.
 
 #### **Supplier Functional Interface
 - Returns output without consuming the inputs. it like opposite of consumer functional interface.
 - get() to retrieve data from source, doesn't have default and static methods.
 - Streams supplier methods in collect().
+- Edge Cases: If the stream is empty, only the supplier is called (followed by the finisher). For parallel streams, multiple suppliers may be invoked (one per thread).
+
+#### **Binary Operator Functional Interface
+- Combine two result set into single result set, It's often call parallel stream processing, but ideal in sequential processing.
+- Mostly it used to merge the result set.
+- Edge Cases: In fully parallel execution, combiners form a reduction tree (like a tournament). If the collector is UNORDERED, the merge order doesn't matter. For non-associative ops, results may vary across runs.
+
+#### **Finisher Functional Interface
+- The return function transform mutable result into immutable result set.
+- Edge Cases: For empty streams, it's still called on the empty container from supplier. Keep it lightweight, as it's a post-processing step.
