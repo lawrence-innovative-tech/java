@@ -89,3 +89,7 @@
 | `noneMatch`*     | `boolean noneMatch(Predicate<? super T> predicate)`                                                    | `boolean`     | Returns `true` if no elements match (or stream empty).                       |
 | `findFirst`*     | `Optional<T> findFirst()`                                                                              | `Optional<T>` | Returns the first element (respects order).                                  |
 | `findAny`*       | `Optional<T> findAny()`                                                                                | `Optional<T>` | Returns any element (nondeterministic, good for parallel).                   |
+#### **Collector Interface & Collectors Class
+- Collectors class has implemented in Collectors Interface, to collects processed data.
+- Collector interface has [[Functional Interface|Predefined Functional interface.]]
+- Collector interface has .of() method to custom collectors function initialization.
