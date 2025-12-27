@@ -18,7 +18,7 @@
 - More Relation between Heap and GC, It will update on GC part.
 #### **Stack
 - Each thread has it's own stack to stores temporary execution values.
-- It's stores local variables, Objects reference which is creates runtime, method return value.
+- It's stores local variables, Objects reference([[Call by Value]]) which is creates runtime, method return value.
 - Each Stack entry is [[#**Stack Frame| Stack Frame]].
 - The default size for 1MB.
 - Experiment with *jcmd* for heap dumps or write a recursive app to hit StackOverflow.
@@ -61,5 +61,3 @@
 - Pre-emptive thread takes full control of scheduled task with time slicing, and continues on another task in **Round Robin Technique** for existing thread processed core.
 - Time slicing for default timing ~10ms to ~100ms. An, it's adjustable only admin of system.
 -  If the task complete or not doesn't bother after expired time save the current state and then replace another task to that place.
-
-
