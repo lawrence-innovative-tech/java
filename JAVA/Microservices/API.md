@@ -1,10 +1,17 @@
-
-#### **Software
-- Software does not have physical components, Give request to software it process and returns  output. There are many type of software are design and developed to solve particular problem or consumer inputs and produces outputs.
-- e.x.
-	- Streams api - Streams are grouped or packages consumes request and it managed and processing then produce output.
 #### **API (Application Programming Interface)
-- Api is an bridge between two software or Two software can talk each other using API.
+- Api is an bridge between two [[0 Fundamentals#**Software|software]] or Two software can talk each other using API.
 #### **Types of API
 1. Open api
-2. 
+	1. Rest api
+	2. soap api
+	3. GraphQL api
+	4. gRPC
+2. Internal api
+	1. Backend-to Backend - Token Verify or Microservice
+	2. Service-to-Database
+3. Partner api
+	1. Data-sharing api
+	2. Payment Gateway
+	3. ABIS
+#### **Open api (Public API)
+- 
