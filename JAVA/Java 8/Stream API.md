@@ -1,4 +1,6 @@
-
+#### **Prerequisites
+- [[Generics]]
+- [[Functional Interface]]
 #### **Stream
 - Stream is data pipeline process. 
 - Without terminal operation it not start to process.
@@ -22,7 +24,7 @@
 7. Stream.iterate() -- creates infinity count based stream.
 8. Primitive stream()
 ##### **Intermediate Stream
-
+- Learn [[Comparable and Comparator]].
 ##### **Filtering and Truncating Operations
 
 |Operation|Signature|Description|Introduced|

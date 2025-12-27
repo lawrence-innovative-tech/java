@@ -41,8 +41,8 @@ Java Topics Mastery List (From Primitive to Mastery)
 
 ### **IV. Modern Java (Java 8 and Beyond)
 
-1. Lambda Expressions: Syntax, functional interfaces (@FunctionalInterface).
-2. Streams API: Intermediate operations (filter, map, flatMap, sorted, distinct), Terminal operations (collect, reduce, forEach, count, match), Parallel streams.
+1. Lambda Expressions: Syntax, functional interfaces ([[Functional Interface|@FunctionalInterface]]).
+2. [[Stream API|Streams API]]: Intermediate operations (filter, map, flatMap, sorted, distinct), Terminal operations (collect, reduce, forEach, count, match), Parallel streams.
 3. Optional Class: For representing optional values and avoiding NullPointerException.
 4. New Date/Time API (java.time package): LocalDate, LocalTime, LocalDateTime, ZonedDateTime, Period, Duration.
 5. var Keyword (Local Variable Type Inference - Java 10): For concise code (use judiciously).
