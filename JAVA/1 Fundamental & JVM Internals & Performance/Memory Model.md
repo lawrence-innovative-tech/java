@@ -61,3 +61,5 @@
 - Pre-emptive thread takes full control of scheduled task with time slicing, and continues on another task in **Round Robin Technique** for existing thread processed core.
 - Time slicing for default timing ~10ms to ~100ms. An, it's adjustable only admin of system.
 -  If the task complete or not doesn't bother after expired time save the current state and then replace another task to that place.
+
+
