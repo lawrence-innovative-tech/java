@@ -21,4 +21,4 @@
 - Spring Security expects the JWT token for every api calls. because does not maintains session.
 
 #### **RESTFULL API
-- RESTFULL api same as rest api, but additionally six condition to be added.
+- RESTFULL api same as rest api, but additionally six rules to be included.
