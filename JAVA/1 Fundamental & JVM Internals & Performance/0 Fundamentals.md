@@ -5,7 +5,7 @@ Computer is a machine (Collection of hardware to get work together (or perform s
 Computer knows only 0's and 1's. Through [[#**Programming Languages]] we talk or communicate with computer.
 
 #### **Software
-- Software does not have physical components, Give request to software it process and returns  output. There are many type of software are design and developed to solve particular problem or consumer inputs and produces outputs.
+- Software does not have physical components, Give request to software it process and returns  output. There are many type of software are design and developed to solve particular problem or consume inputs and produce outputs.
 - e.x.
 	- Streams api - Streams are grouped or packages consumes request and it managed and processing then produce output.
 
