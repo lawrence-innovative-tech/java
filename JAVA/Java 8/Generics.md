@@ -1,9 +1,10 @@
 
 #### **Generics 
+- The important think of generics is **Type Safety** to avoid **ClassCastException**, this validate at compile time, runtime happens in erasure.
 - Generic is a different class or classes can reusable the same resource.
 - The validation happen in compile time, after compilation done, it become a raw type, here happen erasure.
 	- e.g. List\<String> becomes list in runtime, after semantics validates the type it start to change erasure.
-	- Springboot JPA  & @RequestBody can handles **Spring Jackson json deserialization validate methods parameter directly using reflection.** because during compilation erasure happens this change generic type to raw or Object.
+	- SpringBoot JPA  & @RequestBody can handles **Spring Jackson json deserialization validate methods parameter directly using reflection.** because during compilation erasure happens this change generic type to raw or Object.
 - T E K V N - these are generic name
 	- T - Type Reference
 	- E - element 
@@ -12,7 +13,14 @@
 	- N - number
 	- S - Supplier
 	- ? - Unknown Reference (Wildcard)
+#### **Key benefits:
+
+- **Type Safety**: Ensures only compatible types are used, reducing bugs.
+- **Code Reusability**: Write once, use with any type (e.g., List\<Integer> vs. List\<String>).
+- **Eliminate Casting**: No need for explicit casts, improving readability.
+- **Better IDE Support**: Autocompletion and refactoring work seamlessly.
 - Generic bound using PESC (Producer Extends, Super Consumer).
+
 - There are two type generic,
 	1. Bound Type Parameter
 		1. [[#Upper Bound Type Parameter (Producer Extends)|Upper Bound Type Parameter (Producer Extends)]]
