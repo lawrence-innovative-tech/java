@@ -13,11 +13,10 @@
 #### **IoC (Inversion of Control)
 - Before understand IoC must learn [[#**Controls of Objects|Control of objects]].
 - Inversion of controls meaning, it get dependencies dynamically get injects and use it.
-- IoC is principles or design types to handles singleton application.
-	- Three types of handling,
+- IoC is principles or design types to handles singleton application. Then how spring achieve that, using BeanFactory, this is handles all the beans and it's root interface, ApplicationContext also manage the bean implements BeanFactory as well as features like AOP.
+-  Three types of handling,
 		1. Creation
 		2. Manage lifecycle
 		3. Instantiates
-
 #### **Controls of Objects
 -  The class or object which controls their dependencies directly or It's creates own dependencies object's and access.
