@@ -17,7 +17,7 @@
 - IoC is principles or design types to handles singleton application. Then how spring achieve that, using BeanFactory, this is handles all the beans and it's root interface, ApplicationContext also manage the bean implements BeanFactory as well as features like AOP.
 -  Three types of handling,
 		1. Creation
-		2. Manage lifecycle
-		3. Instantiates
+		2. Manage lifecycle (AutoWire, AOP).
+		3. Instantiates (Initializing via constructor).
 #### **Controls of Objects
 -  The class or object which controls their dependencies directly or It's creates own dependencies object's and access.
