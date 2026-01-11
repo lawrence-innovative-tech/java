@@ -27,4 +27,8 @@
 	1. Constructor Injection (Recommended)
 	2. Setter Injection
 	3. Field Injection
+- Key features of Constructor Injector and why it's recommended
+	- **Immutability -** Via constructor injection can protect bean using final keyword, the final should allows direct initialization and constructor to assign values. But, field injection couldn't achieve. Because, if initialize at creates via new keyword it creates object of every usage so, can't achieve singleton design patterns.
+	- **Constructor Injection -** It's achieves IoC principles, Because 
+	- 
 	   
