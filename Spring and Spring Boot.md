@@ -21,3 +21,10 @@
 		3. Instantiates (Initializing via constructor).
 #### **Controls of Objects
 -  The class or object which controls their dependencies directly or It's creates own dependencies object's and access.
+
+#### **Dependency Injection
+- It's technique to achieve IoC principles to object handles in spring. There are three type of DI.
+	1. Constructor Injection (Recommended)
+	2. Setter Injection
+	3. Field Injection
+	   
