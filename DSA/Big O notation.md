@@ -8,7 +8,7 @@
 	2. O(log n) - It perform half of time in linear or process.
 	3. O(n) - n item perform linearly.
 	4. O(n log n) - It takes light more to linear.
-	5. O(n2) - n item perform 2x amount of linear time.
+	5. O(n²) - n item perform n * n  amount of linear time.
 	6. O(2^n) - Exponential tries every combination possible closet. (Avoid possible (Brute force method)).
 	7. O(n!) - Always use only when tiny processing time.
 	
