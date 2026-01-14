@@ -1,5 +1,6 @@
 
 #### **Purpose :
+- Mathematical term of Big O, refers to evaluate worst case.
 - Big O notation is analysis, how code can perform and handles memory.
 - It's not describe exact time and space, instead of analysing frequency of performance.
 	- E.x. If increase inputs, still analyse how it perform.
