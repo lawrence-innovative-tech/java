@@ -17,4 +17,5 @@
 #### **Circular Queue
 - Circular queue also working the same principle above mentioned. But the above drawback are solved here using Module operator.
 	- E.x. index - \[right + 1] % size.
+- It get wrap around.
 	
