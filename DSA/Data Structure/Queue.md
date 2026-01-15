@@ -8,7 +8,7 @@
 2. Circular Queue
 3. Dequeue (Top - End queue)
 4. Priority Queue
-5. Blocking queue ( for concurrency)
+5. Blocking queue (for concurrency)
 
 #### **Simple or Regular queue
 - Normal queue above declares it's definition, but it have drawback,
@@ -18,4 +18,5 @@
 - Circular queue also working the same principle above mentioned. But the above drawback are solved here using Module operator.
 	- E.x. index - \[right + 1] % size.
 - It get wrap around.
+- No wasted space, wrap around.
 	
