@@ -19,4 +19,6 @@
 	- E.x. index - \[right + 1] % size.
 - It get wrap around.
 - No wasted space, wrap around.
-	
+
+#### **Dequeue (Top - End queue)
+- 
