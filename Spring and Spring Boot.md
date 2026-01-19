@@ -7,6 +7,7 @@
 - Auto-configuration by default (proxiesbean = false) for fastly inject or creates beans. This is one the difference between @Configuration annotation to @AutoConfiguration annotation.
 - 3.x spring uses META-INF/spring/\<autoconfiguration package>.imports file have all required class path. Before 3.x spring used spring.factories file used to auto-configuration, which exists in auto-configuration jar file.
 - It helps more on micro-service because different model needs to implement to avoid boilerplate code.
+- After, initiate ApplicationContext spring started creating autoconfiguration, followed by configuration and component scan.
 #### **Custom Auto-Configuration Steps
 1. The class must annotated with @AutoConfiguration annotation. It similarly function like configuration class that difference is above fourth point mentioned.
 2. Above topics fifth point is second steps (Modern Auto-configuration).
