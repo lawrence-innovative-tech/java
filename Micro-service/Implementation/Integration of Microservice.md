@@ -8,5 +8,5 @@
 	5. **Observability -** ELK to monitor logs.
 	6. **CI/CD Pipelines -** Automate to integration CI/CD pipelines.
 	7. **Security -** using JWT or oauth protect application.
-	8. **Containerization and Orchestration -** integrate docker and kubenates or openshift.
-	9. **API gateway for Routing - ** Generalize access to handles apis.
+	8. **Containerization and Orchestration -** integrate docker and Kubernetes or OpenShift.
+	9. **API gateway for Routing - ** Generalize access to handles api.
