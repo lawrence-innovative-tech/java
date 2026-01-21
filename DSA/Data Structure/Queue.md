@@ -19,6 +19,12 @@
 	- E.x. index - \[right + 1] % size.
 - It get wrap around.
 - No wasted space, wrap around.
+- It will works only fixed size, if it dynamic then the allocation to find modulo get misunderstanding or conflict.
 
 #### **Dequeue (Top - End queue)
-- 
+
+#### **Priority Queue
+- priority queue used to [[Minheap algorithm|Minheap algorithm]] categories input.
+- The constructor allows Comparator to custom priority.
+- This doesn't follow LIFO instead it using Minheap.
+
