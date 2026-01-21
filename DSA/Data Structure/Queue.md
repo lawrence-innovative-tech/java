@@ -1,6 +1,6 @@
 #### **Queue
 - Data structure is using (FIFO) First in First Out. Insertion at end (Enqueue), remove or read at first (dequeue) technics.
-- Queue is not synchronized, if want use Blocking queues.
+- Queue is not synchronized, if needs synchronous use Blocking queues.
 - queue uses Two pointer technique to locate their current position, left and right.
 - Linked list implements dequeue interface.
 #### **Type of Queues
@@ -13,7 +13,7 @@
 #### **Simple or Regular queue
 - Normal queue above declares it's definition, but it have drawback,
 	- Above [[#**Queue|queue]] definition describe normal queue.
-	- Here, queue has one drawback, when last index or position reached, if previous space are available the never allows to insert. So, they designed [[#**Circular Queue|circular queue]].
+	- Here, queue has one drawback, when last index or position reached, if previous space are available it never allows to insert. So, they designed [[#**Circular Queue|circular queue]].
 #### **Circular Queue
 - Circular queue also working the same principle above mentioned. But the above drawback are solved here using Module operator.
 	- E.x. index - \[right + 1] % size.
