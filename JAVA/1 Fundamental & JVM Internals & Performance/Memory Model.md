@@ -17,15 +17,16 @@
 - Minor GC fast pause short time, but Major GC Slow/ Long Pause time, in java 25 Generational Shenandoah reduced Old generation  pausing time. \*Update on GC Part.
 - More Relation between Heap and GC, It will update on GC part.
 #### **Stack
+- Java by default supports stack, so when started working into to java should process on [[#**Thread Mechanism|thread]].
 - Each thread has it's own stack to stores temporary execution values.
 - It's stores local variables, Objects reference([[Call by Value]]) which is creates runtime, method return value.
 - Each Stack entry is [[#**Stack Frame| Stack Frame]].
 - The default size for 1MB.
 - Experiment with *jcmd* for heap dumps or write a recursive app to hit StackOverflow.
 #### **Stack Frame
-- Each methods has it's own stack frame, to handles user methods.
-- Native methods, Inline methods (like Math. Abs()), constructor call, lambda/anonymous, (java 21+)  virtual threads these a
-- re Edge case responses so wouldn't create stack frames. // **This edge cases update later.
+- Each methods has it's own stack frame, to handles the methods.
+- Native methods, Inline methods (like Math. Abs()), constructor call, lambda/anonymous, (java 21+)  virtual threads these are.
+- Edge case responses so wouldn't create stack frames. // **This edge cases update later.
 - The stack frame contains,
 	1. Local fields array - which contains 0 index for current object address (this) , rest following index contains the values parameter, local variables and Object references.
 	2. Operand stack - which is used for perform the operation like (a + b). Operand stack is stores the return values.
