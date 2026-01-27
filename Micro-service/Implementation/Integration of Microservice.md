@@ -22,3 +22,8 @@
 | **Scalability**                    | **Vertical:** Harder to scale. You usually have to clone the whole app, even if only one part is busy. | **Horizontal:** Precise. If "Search" is slow, you can add more servers _just_ for Search, without paying to scale the rest.  |
 | **Failure**                        | **Fragile:** A memory leak or bug in one module can crash the entire system.                           | **Resilient:** If one service fails, the others continue to work (e.g., you can browse products even if "Checkout" is down). |
 | **Methodologies**                  | Everytime redeploy whole thinks.                                                                       | develop and release are easy to handles. and achieve agile methodologies.                                                    |
+
+
+#### **Doubts
+1. how does track the single transaction
+2. how does handles fault Toleration & Resilience

@@ -1,4 +1,4 @@
-
+...........................................................................................
 #### **Generics 
 - The important think of generics is **Type Safety** to avoid **ClassCastException**, this validate at compile time, runtime happens in erasure.
 - Generic is a different class or classes can reusable the same resource.
