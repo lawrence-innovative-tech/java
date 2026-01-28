@@ -31,7 +31,7 @@
 	- T representation class. which are classes extends T only allows.
 	- A class is extends T, so a class is subclass, each subclass vary from other subclasses, so that only allow to read. 
 	- It restrict to write and only allows null.
-	- 
+	- It allows to class or it's children
 #### **Lower Bound Type Parameter (Super Consumer)
 - \<? super T> ? representation to class.
 	- T class or T class's super can allow to write data. so, that other subclass can use that without ClassCastException. When parent class are inherited by child classes so there also create by problems. 
