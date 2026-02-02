@@ -51,8 +51,8 @@
 #### **Consumer Functional Interface
 - Consumer collects data, and process some operation but doesn't returns anything.
 - accept() method perform the operation.
-- andThen() methods first process current operation followed by after methods.
-- Stream methods, peek(), foreach(), foreachOrdered().
+- andThen() methods first process current operation followed by after methods. It like function andThen().
+- Stream methods, peek(), foreach(), foreachOrdered(). ForeachOrdered methods also not executing order.
 - The collector interface have accumulator in Bi-Consumer Functional Interface.
 - Edge Cases: In parallel streams, the same container might be updated concurrently, so avoid non-atomic operations like simple increments unless using CONCURRENT. It's the most frequently called method, so optimize for performance.
 
@@ -63,7 +63,7 @@
 - Edge Cases: If the stream is empty, only the supplier is called (followed by the finisher). For parallel streams, multiple suppliers may be invoked (one per thread).
 
 #### **Binary Operator Functional Interface
-- Combine two result set into single result set, It's often call parallel stream processing, but ideal in sequential processing.
+- Combine two result set into single result set, It's often uses parallel stream processing, but ideal in sequential processing.
 - Mostly it used to merge the result set.
 - Edge Cases: In fully parallel execution, combiners form a reduction tree (like a tournament). If the collector is UNORDERED, the merge order doesn't matter. For non-associative ops, results may vary across runs.
 
