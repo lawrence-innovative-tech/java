@@ -6,7 +6,11 @@
 - Without terminal operation it not start to process.
 - Stream it used to process or manipulate the datasource without modifying the datasource.
 - If the stream runs one time it never allow to run again that stream.
-
+#### **Stream Features
+- Lazy evaluation - When terminal operation are invoke to perform the entire stream, for immutability.
+- Immutability - When the original dataset are unchanged after perform stream pipeline, for protecting datasource. When stateful operation perform it compute previous result maintaining, so other intermediate operation triggers, it's hard manage pipeline, and also it other intermediate reuse the same streams element it get cause the source.
+- It's and functional programming, so it's follows functional programming structures.
+- The terminal operation has flag state of the stream. because terminal operation triggers or invoke the streams pipelines.
 ##### **Three Major part of stream
 1. [[#**Several types to create stream object,|Creation part]]
 2. [[#**Intermediate Stream|Intermediate Part]]
