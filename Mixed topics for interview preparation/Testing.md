@@ -43,7 +43,7 @@ Full Assertion list
 
 - assertEquals(expected, actual)
 - assertEquals(expected, actual, String message)
-- assertEquals(expected, actual, Supplier<String> messageSupplier)
+- assertEquals(expected, actual, Supplier\<String> messageSupplier)
 - Overloads for primitive types & special cases (with optional delta for floating-point):
     - assertEquals(boolean, boolean, ...)
     - assertEquals(byte, byte, ...)
@@ -64,3 +64,22 @@ Full Assertion list
 - assertNotNull(actual, ...)
 - assertTrue(boolean condition, ...)
 - assertFalse(boolean condition, ...)
+
+UnitTest lifecycle
+- @BeforeAll - run once if present. by default it's static method if instance creates in class it will becomes instance methods. it runs only once.
+- Creates object for @test if it method.
+- @BeforeEach (junit4 @Before) - Before run each @Test, @RepeatedTest, @parametarizedTest method
+- @Test - run test method.
+- @AfterEach (junit4 @After) - run each @Test, it started to run if it test has failed.
+- @AfterAll - run if present. it similar to @BeforeAll.
+
+**PER_METHOD** (default in JUnit 5)
+    - New test class instance created **before each**@Test
+    - Fields are **fresh/reset** for every test → very safe, isolated
+    - @BeforeAll / @AfterAll **must be static**
+    
+**PER_CLASS** (opt-in via @TestInstance(Lifecycle.PER_CLASS))
+    - One instance created for the **whole class**
+    - Shared state between tests (careful!)
+    - @BeforeAll / @AfterAll can be **non-static** (instance methods)
+    - Great for expensive setup (e.g., Spring context, embedded DB) or when you want shared state intentionally
