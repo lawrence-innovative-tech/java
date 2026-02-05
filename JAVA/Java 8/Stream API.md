@@ -16,9 +16,9 @@
 2. [[#**Intermediate Stream|Intermediate Part]]
 3. [[#**Terminal Stream|Terminal Part]]
 ##### **Sub part of stream //TODO
-1. Spliterator  
+1. Spliterator - It's not taken memory, it just prefers the collection data to pipeline setup.
 ##### **Several types to create stream object
-- Creation of stream object, creates ReferencePipeline and collection's Spilterator (prefers the stream pipeline, not started to execution).
+- Creation of stream object, creates ReferencePipeline and collection's Spliterator (prefers the stream pipeline, not started to execution).
 	1. Collection.stream() -- creates collection object used to create stream object.
 	2. Stream.of()  -- creates passing arguments in of() methods creates stream object.
 	3. Arrays.stream -- creates primitive object to stream object, and it called boxing.
