@@ -1,11 +1,21 @@
 #### **Prerequisites
 - [[Generics]]
 - [[Functional Interface]]
+#### **Notes
+1. Stream pipeline features is efficient memory and lazy evaluation.
+2. Primitive stream are throws NPE (NullPointerException).
+3. Streams are not throw NPE some intermediate operation throws NPE.
+4. There are two wats to handles exception.
+	1. Inside try-catch
+	2. Creates own Functional interface to handles.
 #### **Stream
 - Stream is data pipeline process. 
 - Without terminal operation it not start to process.
 - Stream it used to process or manipulate the datasource without modifying the datasource.
 - If the stream runs one time it never allow to run again that stream.
+#### **Primitive Stream
+- Process primitive data types in a stream pipeline.
+- Primitive stream can wrap object stream using boxed().
 #### **Stream Features
 - Lazy evaluation - When terminal operation are invoke to perform the entire stream, for immutability.
 - Immutability - When the original dataset are unchanged after perform stream pipeline, for protecting datasource. When stateful operation perform it compute previous result maintaining, so other intermediate operation triggers, it's hard manage pipeline, and also it other intermediate reuse the same streams element it get cause the source.
