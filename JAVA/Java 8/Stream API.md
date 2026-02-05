@@ -18,17 +18,18 @@
 ##### **Sub part of stream //TODO
 1. Spliterator  
 ##### **Several types to create stream object
-
-1. Collection.stream() -- creates collection object used to create stream object.
-2. Stream.of()  -- creates passing arguments in of() methods creates stream object.
-3. Arrays.stream -- creates primitive object to stream object, and it called boxing.
-4. Files.readlines / BufferReader.lines -- creates stream object.
-5. Pattern.spiltAsStream().
-6. Stream.generate() -- creates infinity condition based stream.
-7. Stream.iterate() -- creates infinity count based stream.
-8. Primitive stream()
+- Creation of stream object, creates ReferencePipeline and collection's Spilterator (prefers the stream pipeline, not started to execution).
+	1. Collection.stream() -- creates collection object used to create stream object.
+	2. Stream.of()  -- creates passing arguments in of() methods creates stream object.
+	3. Arrays.stream -- creates primitive object to stream object, and it called boxing.
+	4. Files.readlines / BufferReader.lines -- creates stream object.
+	5. Pattern.spiltAsStream().
+	6. Stream.generate() -- creates infinity condition based stream.
+	7. Stream.iterate() -- creates infinity count based stream.
+	8. Primitive stream()
 ##### **Intermediate Stream
 - Learn [[Comparable and Comparator]].
+- Intermediate operation perform stateful, stateless operation, stateful operation stores temporary memory to process the data (e.g. sorted(), distinct(), skip(), limit()), stateless operation doesn't stores anything just process the pipeline.
 ##### **Filtering and Truncating Operations
 
 |Operation|Signature|Description|Introduced|
