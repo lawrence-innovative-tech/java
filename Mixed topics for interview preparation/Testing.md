@@ -97,4 +97,7 @@ Mock
 - Mock is replace a real one. or mock is proxy object of implements interface or extends class.
 - Simulate success, failure act as real object.
 - Junit5 never pass class as parameter, it takes by reference.
+Stub
+- Stub is sub process of mock, mock is creates for proxy objects so, it should be returns if method has returns.
+Spy
 - 
