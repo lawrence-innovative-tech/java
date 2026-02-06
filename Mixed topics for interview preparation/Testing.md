@@ -84,3 +84,11 @@ UnitTest lifecycle
     - Shared state between tests (careful!)
     - @BeforeAll / @AfterAll can be **non-static** (instance methods)
     - Great for expensive setup (e.g., Spring context, embedded DB) or when you want shared state intentionally
+
+
+Handles exception
+	@assertThrows(excepted_exception, () -> execution)
+		Its helps to check negative scenario. if excepted exception won't throw the test failed.
+Timeout habdling
+	@Timeout(values = 2, unit = TimeUnit.SECONDS)
+	assertTimeout(Duration.ofMillis(500))
