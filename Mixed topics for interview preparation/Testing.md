@@ -72,6 +72,7 @@ UnitTest lifecycle
 - @Test - run test method.
 - @AfterEach (junit4 @After) - run each @Test, it started to run if it test has failed.
 - @AfterAll - run if present. it similar to @BeforeAll.
+- The lifecycle for each test class. If wants to have single entry point singleton to use @TestContainers, @Containers, @Extendswith extension. 
 
 **PER_METHOD** (default in JUnit 5)
     - New test class instance created **before each**@Test
