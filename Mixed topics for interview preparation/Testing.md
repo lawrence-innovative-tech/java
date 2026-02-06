@@ -92,3 +92,6 @@ Handles exception
 Timeout habdling
 	@Timeout(values = 2, unit = TimeUnit.SECONDS)
 	assertTimeout(Duration.ofMillis(500), )
+
+Mock
+- Mock is replace a real one. or mock is proxy object th
