@@ -9,7 +9,7 @@ Isolation
 
 how to achieve isolation
 - Mock - mock depended object or dependency works like real one.
-- Faking - Use memory database for real one.
+- Flaking - Use memory database for real one.
 - Stubbing - Setup before runs particular method or class all the necessary to stub.	 
 - DI - direct inject to depends objects.
 
