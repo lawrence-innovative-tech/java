@@ -96,3 +96,5 @@ Timeout habdling
 Mock
 - Mock is replace a real one. or mock is proxy object of implements interface or extends class.
 - Simulate success, failure act as real object.
+- Junit5 never pass class as parameter, it takes by reference.
+- 
