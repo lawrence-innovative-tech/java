@@ -94,4 +94,5 @@ Timeout habdling
 	assertTimeout(Duration.ofMillis(500), )
 
 Mock
-- Mock is replace a real one. or mock is proxy object th
+- Mock is replace a real one. or mock is proxy object of implements interface or extends class.
+- Simulate success, failure act as real object.
