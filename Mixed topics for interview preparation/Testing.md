@@ -100,4 +100,4 @@ Mock
 Stub
 - Stub is sub process of mock, mock is creates for proxy objects so, it should be returns if method has returns.
 Spy
-- 
+- Spy is a partial mock, it executes real code. if spy or particular method has stubbing, it defiantly returns stub's value. 
