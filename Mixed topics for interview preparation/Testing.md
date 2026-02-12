@@ -112,4 +112,7 @@ Spy
 - When method has no stubbing, it will executes real one.
 
 Inject Bean
-- 
+- The construction injection is the best practice of managing or achieve IoC concept with DI concept.
+- A Class wants some beans the inject Bean initializes those beans into particular class.
+- It's like @Autowired in spring boot application.
+
