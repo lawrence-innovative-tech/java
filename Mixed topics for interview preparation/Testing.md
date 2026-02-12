@@ -256,3 +256,62 @@ public class ControllerTest {
 }
 ```
 
+
+#### **Dynamic Test
+- Dynamic test check large to dataset without boilerplate, whereas creates each test as stream pipeline. 
+- @BeforeEach won't invoke each dynamic test instead it will execute as first.
+- @TestFactory annotation are used preparing test. Actually Junit triggers to method(), method perform completely triggers to factory, factory ends up, Junit starts execution.
+- Test Factory has Dynamic node, dynamic node has Dynamic tests and Dynamic containers.
+	examples :
+``` java
+@SpringBootTest
+@AutoConfigureMockMvc
+class UserApiDynamicTest {
+
+    @Autowired
+    MockMvc mockMvc;
+
+    List<Integer> userIds = List.of(1,2,3);
+
+    // -----------------------------
+    // Dynamic tests for GET users
+    // -----------------------------
+
+    @TestFactory
+    Stream<DynamicNode> userApiTests() {
+
+        return Stream.of(
+
+            // Container 1
+            DynamicContainer.dynamicContainer("GET /users/{id}",
+                userIds.stream()
+                    .map(id ->
+                        DynamicTest.dynamicTest(
+                            "Fetch user " + id,
+                            () -> mockMvc.perform(get("/users/" + id))
+                                    .andExpect(status().isOk())
+                                    .andExpect(jsonPath("$.id").value(id))
+                        )
+                    )
+            ),
+
+            // Container 2
+            DynamicContainer.dynamicContainer("DELETE /users/{id}",
+                userIds.stream()
+                    .map(id ->
+                        DynamicTest.dynamicTest(
+                            "Delete user " + id,
+                            () -> mockMvc.perform(delete("/users/" + id))
+                                    .andExpect(status().isOk())
+                        )
+                    )
+            )
+        );
+    }
+}
+
+
+```
+
+Without Dynamic creates each @Test to validate all the methods.
+
