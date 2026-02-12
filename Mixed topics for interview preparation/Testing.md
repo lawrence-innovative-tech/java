@@ -111,7 +111,7 @@ Spy
 - Spy is a partial mock, it executes real code. if spy or particular method has stubbing, it defiantly returns stub's value. 
 - When method has no stubbing, it will executes real one.
 
-Inject Bean
+Inject Mock
 - The construction injection is the best practice of managing or achieve IoC concept with DI concept.
 - A Class wants some beans the inject Bean initializes those beans into particular class.
 - It's like @Autowired in spring boot application.
