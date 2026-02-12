@@ -65,6 +65,14 @@ Full Assertion list
 - assertTrue(boolean condition, ...)
 - assertFalse(boolean condition, ...)
 
+#### 1. **Overview of Bean Injection in Spring Tests**
+
+- In Spring, beans are objects managed by the ApplicationContext (IoC container). Injection means providing dependencies automatically.
+- In **tests**, injection helps set up realistic or mocked environments:
+    - **Unit Tests**: Focus on isolating a single class (e.g., using Mockito to mock dependencies).
+    - **Integration Tests**: Load part or all of the Spring context, injecting real or mocked beans.
+
+
 UnitTest lifecycle
 - @BeforeAll - run once if present. by default it's static method if instance creates in class it will becomes instance methods. it runs only once.
 - Creates object for @test if it method.
@@ -101,3 +109,7 @@ Stub
 - Stub is sub process of mock, mock is creates for proxy objects so, it should be returns if method has returns.
 Spy
 - Spy is a partial mock, it executes real code. if spy or particular method has stubbing, it defiantly returns stub's value. 
+- When method has no stubbing, it will executes real one.
+
+Inject Bean
+- 
