@@ -116,3 +116,41 @@ Inject Bean
 - A Class wants some beans the inject Bean initializes those beans into particular class.
 - It's like @Autowired in spring boot application.
 
+#### **Type of Test methods (Junit5)
+1. @ParameterizedTest
+	1. @ValueSource - Processing a records like array.
+	2. @CsvSource - Takes an entire row as parameter and process.
+	3. @MethodSource - It should be in Arguments[], Stream\<Arguments>, Iterable\<Arguments>.
+2. @RepeatedTest
+3. @NestedTest
+4. @DynamicTest
+
+#### **Parameterized Test
+- Parameterized test used to test application without calling external looping to runs the repeated or continue test methods.
+- Pass input as parameter, there are three ways to pass parameter. that's all it mentions above.
+	**@ValueSource**
+	1. Process and pass every single value to start processing.
+	2. It mostly test to primitive data types.
+	3. Object can accept to create parameter test, but hardly to implement because of the parameter might not suitable to accept it.
+	``` java
+		@ParameterizedTest  
+		@ValueSource(strings = {"ArrayList", "HashMap", "TreeMap", "TreeSet"})  
+		public void checkParameterTest(String value) {  
+		    System.out.println("Print parameter test :"+value);  
+		}
+	```
+	   
+	**@CsvSource**
+	1. Process as differentiate as input using delimiter, but by default it's comma separator.
+	2. Possible changing delimiter as user view.
+	3. Input converts value as based on input types. But, can custom convert by using @ConvertWith.
+	```java
+	@ParameterizedTest  
+	@CsvSource(value = {"test1|test2", "test3|test4"}, delimiter = '|')  
+	public void checkCsvTest(String value1, String value2) {  
+	    System.out.println("Print csv test :"+value1 + " - "+value2);  
+	}
+	```
+
+	**@MethodSource
+	1. 
