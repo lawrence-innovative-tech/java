@@ -33,4 +33,10 @@
 	- **Type safety (fail safety & fail fast) - ** Constructor injection forced to required all necessary bean, If it missed the application fail fast. But, field injection initial call empty constructor. So, no garaentee  
 	- **Constructor Injection -** It's achieves IoC principles. 
 	- **Unit testing -** Easy to integrate unit testing, If using field injection should use @MockBean annotation. 
-	   
+#### **Bean Lifecycle
+- Bean Definition Acquisition - Read config, xml or beans
+- Instantiation - Creates object of class or config.
+- Dependency Injection - inject object required class.
+- Aware Interface - If bean implementation of aware (Marker interface) //TODO
+- Initialization :
+	1. 
