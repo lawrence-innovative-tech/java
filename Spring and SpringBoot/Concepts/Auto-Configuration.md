@@ -1,4 +1,7 @@
 
+#### **Spring Container
+- Manage all the bean's lifecycles, creation to destroy.
+- Spring container and IoC both are same in Spring framework.
 #### **Auto-Configuration
 -  Configuration means, application must have some prerequisites to run, expose and externally needs some resources from outside all are configure automated developer focus only their business logic. Spring can configure via XML, spring boot used annotation or java classes.
 - **Purpose of Auto-Configuration
@@ -39,4 +42,9 @@
 - Dependency Injection - inject object required class.
 - Aware Interface - If bean implementation of aware (Marker interface) //TODO
 - Initialization :
-	1. 
+	1. beanPostProssesorInitializer
+	2. @PostConstructor
+	3. beanAfterPostProssesorInitializer
+- Spring AOP
+- Ready to use.
+- Destroy.
