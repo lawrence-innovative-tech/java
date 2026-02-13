@@ -33,7 +33,7 @@
 	3. Field Injection
 - Key features of Constructor Injector and why it's recommended
 	- **Immutability -** Via constructor injection can protect bean using final keyword, the final should allows direct initialization and constructor to assign values. But, field injection couldn't achieve. Because, if initialize at creates via new keyword it creates object of every usage so, can't achieve singleton design patterns.
-	- **Type safety (fail safety & fail fast) - ** Constructor injection forced to required all necessary bean, If it missed the application fail fast. But, field injection initial call empty constructor. So, no garaentee  
+	- **Type safety (fail safety & fail fast) - ** Constructor injection forced to required all necessary bean, If it missed the application fail fast. But, field injection initial call empty constructor. So, no guarantee  
 	- **Constructor Injection -** It's achieves IoC principles. 
 	- **Unit testing -** Easy to integrate unit testing, If using field injection should use @MockBean annotation. 
 #### **Bean Lifecycle
