@@ -1,21 +1,21 @@
 there are three type of testing
-1. unit - class, methods are validates here
-2. integration - integrate multi modules here to validate
+1. unit - class, methods are validates here (Mainly focused on test Particular logic, so required for isolation)
+2. integration - integrate multi modules here to validate (Test to depended modules or service to to avoid major issues)
 3. end to end - testing as user point 
 
 Isolation
 - Isolation is core principle because, the unit test focus on checks particular logic how does it will work.
-- Never wait external dependencies like database connectivity, because it should identity how does the particular working, and easy to focus edge case also. because if it fail easy to identity where and why it failed.
+- Never wait external dependencies like database connectivity, because it should identity whether particular class or method working, and easy to focus edge case also. because if it fail easy to identity where and why it failed.
 
 how to achieve isolation
 - Mock - mock depended object or dependency works like real one.
-- Flaking - Use memory database for real one.
+- Faking - Use memory database for real one.
 - Stubbing - Setup before runs particular method or class all the necessary to stub.	 
 - DI - direct inject to depends objects.
 
 Testing structure(AAA patterns)
-1. Arrange - before start test setup the env
-2. Act - Test the actual 
+1. Arrange - before start test, setup the env
+2. Act - Actual Test happening
 3. Assert - checks expected result.
 
 TDD - BDD
@@ -27,7 +27,7 @@ BDD
 - BDD is Behaviour Driven Development // Todo
 
 Assertion and Matchers
-- Assertion is used to match the result and expected output.
+- Assertion is used to match result and expected output.
 - Junit Assertion methods (basic)
 	1. assertionEquals()
 		1. assertEquals(actual, expected) all the primitive values
@@ -105,6 +105,7 @@ Mock
 - Mock is replace a real one. or mock is proxy object of implements interface or extends class.
 - Simulate success, failure act as real object.
 - Junit5 never pass class as parameter, it takes by reference.
+- **Verify()** method checks how many times that class or method invoked, if exceeds our expected thrown exception, and 
 Stub
 - Stub is sub process of mock, mock is creates for proxy objects so, it should be returns if method has returns.
 Spy
