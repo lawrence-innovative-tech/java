@@ -1,6 +1,7 @@
 
 #### **Purpose
-1. 
+1. The unit test focus on only for main logic.
+2. Integration test to check data flow, external dependency, configuration.
 
 #### **@SpringBootTest Annotation
 - This annotation creates application context and maintain all the beans like spring runtime But it can also allows partial context like mocking, stubbing.
