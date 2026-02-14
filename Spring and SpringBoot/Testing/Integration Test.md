@@ -1,3 +1,7 @@
+
+#### **Purpose
+1. 
+
 #### **@SpringBootTest Annotation
 - This annotation creates application context and maintain all the beans like spring runtime But it can also allows partial context like mocking, stubbing.
 - Without application context, should mock all the bean or use raw java object creates and use.
