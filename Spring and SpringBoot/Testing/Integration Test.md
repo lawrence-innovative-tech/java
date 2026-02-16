@@ -2,6 +2,7 @@
 #### **Purpose
 1. The unit test focus on only for main logic.
 2. Integration test to check data flow, external dependency, configuration.
+3. Junit create object outside of the application context, but spring creates application context for checks, When class annotated by @SpringBootTest, @DataJpaTest, @WebMvcTest or @TestContainers are used integration test and creates application context. Here, one problem is there that is mentioned in @InjectMock Definition.
 
 #### **@SpringBootTest Annotation
 - This annotation creates application context and maintain all the beans like spring runtime But it can also allows partial context like mocking, stubbing.
