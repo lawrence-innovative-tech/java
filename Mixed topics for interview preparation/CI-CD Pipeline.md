@@ -4,6 +4,7 @@
 - There are many ways to create ci/cd pipeline.
 	1. GitHub actions
 	2. Jenkins
+	3. GitLab
 - Ci-CD pipeline is event driven design, when code push repository ci/cd pipeline get triggers, run unit and integration test, if test has failed reports to particular developer.
 - Success testing take build and deploy to staging to test application.
 #### **Top companies code maintenance
