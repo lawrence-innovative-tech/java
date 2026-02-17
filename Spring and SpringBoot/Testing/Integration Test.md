@@ -4,7 +4,7 @@
 2. Integration test to check data flow, external dependency, configuration.
 3. Junit create object outside of the application context, but spring creates application context for checks, When class annotated by @SpringBootTest, @DataJpaTest, @WebMvcTest or @TestContainers are used integration test and creates application context. Here, one problem is there that is mentioned in @InjectMock Definition.
 4. Combine Mockito and Spring context in single class file, bean conflict will occur.
-5. Mockito will executes first, so @InjectBean creates inject mock bean into controller, then spring started to executes it will scan and creates object in spring context, then spring stats di for PostProcessorBeanExecution to inject bean via reflection, now Controller class needs Service object, so spring initialize service class object from application context.
+5. Mockito will executes first, so @InjectBean creates inject mock bean into controller, then spring started to executes it will scan and creates object in spring context, then spring starts di for PostProcessorBeanExecution to inject bean via reflection, now Controller class needs Service object, so spring initialize service class object from application context.
 
 ```java
 @ExtendWith(MockitoExtension.class)  
