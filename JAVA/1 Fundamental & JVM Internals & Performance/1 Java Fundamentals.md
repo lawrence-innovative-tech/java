@@ -141,7 +141,10 @@ java --module-path mods \
 	- This only one to generates for the class, but user can create multiple object using this object (The object initial first 6 bytes refer to class object for fast accessing to method area).
 	- If different loaders load same class the object in duplicate, the address object like this 
 	  loader + class name so that when single loaders the object should in identical instead different loader load the same class definitely the object in duplicate.
-- The object memory allocation in heap, runs constuctors 
+	- This is how OSGi, plugin systems, web servers (Tomcat), etc. can run multiple versions of the same library safely.
+- The object memory allocation in heap, runs constructor through happen via this class.
+-  The link creates or happen via in this class( each class have its own pointer).
+- 
 #### **Question Bank for Learning
 1. JDK is enough to create jar file then what is the purpose of Maven the build tool and some plugins in needs to build jar why?
 2. The java packages are in JRE we are using java api to our application, so where it can load and how its represented in .class file.
