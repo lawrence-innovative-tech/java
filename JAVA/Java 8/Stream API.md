@@ -42,13 +42,13 @@
 - Intermediate operation perform stateful, stateless operation, stateful operation stores temporary memory to process the data (e.g. sorted(), distinct(), skip(), limit()), stateless operation doesn't stores anything just process the pipeline.
 ##### **Filtering and Truncating Operations
 
-|Operation|Signature|Description|Introduced|
-|---|---|---|---|
-|**filter**|`Stream<T> filter(Predicate<? super T> predicate)`|Returns elements matching the predicate.|Java 8|
-|**takeWhile**|`Stream<T> takeWhile(Predicate<? super T> predicate)`|Takes the longest prefix of elements matching the predicate (ordered streams only).|Java 9|
-|**dropWhile**|`Stream<T> dropWhile(Predicate<? super T> predicate)`|Drops the longest prefix of elements matching the predicate (ordered streams only).|Java 9|
-|**limit**|`Stream<T> limit(long maxSize)`|Truncates to the first `maxSize` elements.|Java 8|
-|**skip**|`Stream<T> skip(long n)`|Discards the first `n` elements.|Java 8|
+| Operation     | Signature                                             | Description                                                                         | Introduced |
+| ------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------- |
+| **filter**    | `Stream<T> filter(Predicate<? super T> predicate)`    | Returns elements matching the predicate.                                            | Java 8     |
+| **takeWhile** | `Stream<T> takeWhile(Predicate<? super T> predicate)` | Takes the longest prefix of elements matching the predicate (ordered streams only). | Java 9     |
+| **dropWhile** | `Stream<T> dropWhile(Predicate<? super T> predicate)` | Drops the longest prefix of elements matching the predicate (ordered streams only). | Java 9     |
+| **limit**     | `Stream<T> limit(long maxSize)`                       | Truncates to the first `maxSize` elements.                                          | Java 8     |
+| **skip**      | `Stream<T> skip(long n)`                              | Discards the first `n` elements.                                                    | Java 8     |
 
 ##### **Mapping Operations
 
