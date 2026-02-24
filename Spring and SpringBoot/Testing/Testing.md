@@ -35,8 +35,6 @@ Assertion and Matchers
 		3. assertEquals(actual, expected, Supplier\<String>) all the primitive values
 		4. Assertion.assertArraysEquals(actual[], expected[], String message) same as above mentions
 		5. Assertion.assertIteratorEquals(actualIterator\<?>, ExpectedIterator\<?>, String message)
-		
-	2. assertion
 
 Full Assertion list 
 ### Core equality & identity assertions
@@ -71,7 +69,6 @@ Full Assertion list
 - In **tests**, injection helps set up realistic or mocked environments:
     - **Unit Tests**: Focus on isolating a single class (e.g., using Mockito to mock dependencies).
     - **Integration Tests**: Load part or all of the Spring context, injecting real or mocked beans.
-
 
 UnitTest lifecycle
 - @BeforeAll - run once if present. by default it's static method if instance creates in class it will becomes instance methods. it runs only once.
