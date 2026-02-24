@@ -77,10 +77,11 @@
 
 ##### **Peeking and Gathering Operations
 
-|Operation|Signature|Description|Introduced|
-|---|---|---|---|
-|**peek**|`Stream<T> peek(Consumer<? super T> action)`|Performs an action (e.g., logging) on each element without modifying it.|Java 8|
-|**gather**|`<R> Stream<R> gather(Gatherer<? super T, ?, R> gatherer)`|Applies a custom gatherer for complex transformations (experimental in earlier previews).|Java 24|
+| Operation  | Signature                                                  | Description                                                                               | Introduced |
+| ---------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------- |
+| **peek**   | `Stream<T> peek(Consumer<? super T> action)`               | Performs an action (e.g., logging) on each element without modifying it.                  | Java 8     |
+| **gather** | `<R> Stream<R> gather(Gatherer<? super T, ?, R> gatherer)` | Applies a custom gatherer for complex transformations (experimental in earlier previews). | Java 24    |
+|            |                                                            |                                                                                           |            |
 
 ##### **Terminal Stream
 - When terminal operation only start the execution of stream pipeline, and if terminal operation has involved streams has end.
