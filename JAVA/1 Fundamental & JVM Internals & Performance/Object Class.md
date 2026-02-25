@@ -34,3 +34,14 @@ Your understanding was correct on every major point:
 
 #### **Equals 
 - By default, it will check reference both are same or not.
+
+#### **Hashmap, LinkedHashMap, HashSet working principles
+- By default each 16 buckets are allocates, each buckets can hold unlimited data either linked list or Red-black tree.
+- When hash collision happen beyond 8th record and buckets under 64 size it will resize the buckets until reaches 64 buckets size. When buckets get resized it rehash which stored all the hash and restores based on new hash into relevant buckets. That's why, Hashmap use find buckets or index based on (n - 1)  & hash. n for size of the buckets existing.
+- When collision reaches 64 buckets 8 beyond the buckets records it converts into Red-Black tree for faster getting result. It maintain higher memory so that java uses initially LinkedList and threshold for table in 64 buckets.
+- **For concurrency -** If buckets has empty CAS success, just insert and come back. followed insertion request are in synchronized path. The lock only for head of the node. so that another buckets still update. if CAS failed tries until it finishes it work.
+- **Node -** both HashMap or hash related all are working same principle the buckets allocation the core logic are same, but their purpose it different and data are different.
+- **Reference images path -**
+	1. ![[internal_working_hashmap_1.png]]
+	2. ![[internal_working_hashmap_2.png]]
+	3. ![[internal_working_hashmap_3.png]]
