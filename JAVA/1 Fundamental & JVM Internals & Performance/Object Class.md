@@ -23,6 +23,14 @@ Your understanding was correct on every major point:
 - When equals is true → override the value (“override the content”).
 - When equals is false → just add as another resident in the same bucket.
 
+#### **Purpose of HashCode & equals
+- Actually, Hash based collection buckets allocation will occur Collision, because if two object have same content but both are different hashcode hashmap allocates different buckets.
+- But it may same person creates two times of object with same content java treats as different person, different content is collision, logically failed.
+- If it override content and checks whether both have same content or not. if it both meets same it should allocates same buckets or it should be overrides.
+- But, by default hashmap checks initially hashcode, if already buckets have values checks whether where both content are same using equals method. if same overrides or add new or consider new records. so when equals and hashcode both usage is powerful.
+
 #### **HashCode
 - By default, object creates it's generate unique hash for memory (Mark down) + memory address. but if it will overrides will creates new hash.
-- It helps to identity different objects.
+
+#### **Equals 
+- By default, it will check reference both are same or not.
