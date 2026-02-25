@@ -4,6 +4,17 @@
  - Reflection, serialization and Threads are access via object class.
  - Object header layout 8-byte (64- Hotspot vm, compressedOops + compressedClassPointer).
  - getClass() method is native final method can't overridden, getClass() calls native method get klass pointer, and communicate to Class object which is present in heap memory.
+ - By default hava must extends only one class at a time, so if custom or build-in class extends some other classes jvm automatically writes object extension of parent class.
+ - Delegation of lifecycle - B -> A -> object class.
+
+#### **Object class methods
+1. hashcode - by default it generate hash of memory it can overrides it will generate based on that.
+2. equlas - by default it will checks references, when the class overrides checks based on overriden.
+3. toString - by default it will print classname + hashcode of object, based on overriden it will print.
+4. notify -
+5. notifyall -
+6. wait -
+7. finalize - when object will destroy gc calls finalize method but now it deprecated, this clear the used value of that object.
 
 Your understanding was correct on every major point:
 
@@ -11,3 +22,7 @@ Your understanding was correct on every major point:
 - Inside bucket: quick hash match → then equals check (custom or default).
 - When equals is true → override the value (“override the content”).
 - When equals is false → just add as another resident in the same bucket.
+
+#### **HashCode
+- By default, object creates it's generate unique hash for memory (Mark down) + memory address. but if it will overrides will creates new hash.
+- It helps to identity different objects.
