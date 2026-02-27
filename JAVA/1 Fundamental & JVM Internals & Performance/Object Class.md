@@ -22,7 +22,6 @@ Your understanding was correct on every major point:
 - Inside bucket: quick hash match → then equals check (custom or default).
 - When equals is true → override the value (“override the content”).
 - When equals is false → just add as another resident in the same bucket.
-
 #### **Purpose of HashCode & equals
 - Actually, Hash based collection buckets allocation will occur Collision, because if two object have same content but both are different hashcode hashmap allocates different buckets.
 - But it may same person creates two times of object with same content java treats as different person, different content is collision, logically failed.
@@ -45,3 +44,16 @@ Your understanding was correct on every major point:
 	1. ![[internal_working_hashmap_1.png]]
 	2. ![[internal_working_hashmap_2.png]]
 	3. ![[internal_working_hashmap_3.png]]
+
+#### **Exception
+- **Throwable** handles all the errors and exception. it maintains error message, cause of problem, stack traces.
+- Throwable 
+	- Exception
+		- When problem can recoverable is called **Exception.** It may handle by application and application depended all are exceptions.
+		- There are two type of Exception:
+			1. Checked Exception
+				- RuntimeException (Unchecked Exception)
+			2. Unchecked Exception
+				- IOException, FileNotFoundException, SQLException are occur in runtime but the developer should handles these exception it should validate at compile time. 
+	- Error
+		- **Error** is unrecoverable problems. It system/Jvm aren't recover by application.
