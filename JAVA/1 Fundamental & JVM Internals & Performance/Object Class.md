@@ -14,7 +14,8 @@
 4. notify -
 5. notifyall -
 6. wait -
-7. finalize - when object will destroy gc calls finalize method but now it deprecated, this clear the used value of that object.
+7. clone - 
+8. finalize - when object will destroy gc calls finalize method but now it deprecated, this clear the used value of that object.
 
 Your understanding was correct on every major point:
 
