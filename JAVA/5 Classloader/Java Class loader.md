@@ -28,3 +28,7 @@ Basically, three type of the loader are exist. But in my point view there is a f
 4. JRE - It loads only **Primitive data types and array**. 
 
 ![[JavaClassLoader-Architecture.webp]]
+
+#### **Custom Classloader
+- Application classloader loads class from Classpath. But framework needs load nested jar, Spring boot can load nested jar without extracted.
+- Tomcat server can runs multiple application in single server there different application use different version of dependencies if single load application failed to run. But it resolves by custom loaders.

@@ -260,7 +260,7 @@ public class ControllerTest {
 - Dynamic test check large to dataset without boilerplate, whereas creates each test as stream pipeline. 
 - @BeforeEach won't invoke each dynamic test instead it will execute as first.
 - @TestFactory annotation are used preparing test. Actually Junit triggers to method(), method perform completely triggers to factory, factory ends up, Junit starts execution.
-- Test Factory has Dynamic node, dynamic node has Dynamic tests and Dynamic containers.
+- Test Factory has Dynamic node, dynamic node has Dynamic containers and Dynamic test.
 	examples :
 ``` java
 @SpringBootTest
