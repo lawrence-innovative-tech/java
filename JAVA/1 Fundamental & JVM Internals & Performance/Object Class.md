@@ -3,7 +3,7 @@
  - Object class provides necessary thinks of the each class. like getClass() to access current object.
  - Reflection, serialization and Threads are access via object class.
  - Object header layout 8-byte (64- Hotspot vm, compressedOops + compressedClassPointer).
- - getClass() method is native final method can't overridden, getClass() calls native method get klass pointer, and communicate to Class object which is present in heap memory.
+ - [[#**getClass() - (Class object)|getClass()]] method is native final method can't overridden, getClass() calls native method get klass pointer, and communicate to Class object which is present in heap memory.
  - By default hava must extends only one class at a time, so if custom or build-in class extends some other classes jvm automatically writes object extension of parent class.
  - Delegation of lifecycle - B -> A -> object class.
 
@@ -28,7 +28,6 @@ Your understanding was correct on every major point:
 - But it may same person creates two times of object with same content java treats as different person, different content is collision, logically failed.
 - If it override content and checks whether both have same content or not. if it both meets same it should allocates same buckets or it should be overrides.
 - But, by default hashmap checks initially hashcode, if already buckets have values checks whether where both content are same using equals method. if same overrides or add new or consider new records. so when equals and hashcode both usage is powerful.
-
 #### **HashCode
 - By default, object creates it's generate unique hash for memory (Mark down) + memory address. but if it will overrides will creates new hash.
 #### **Equals 
@@ -36,7 +35,11 @@ Your understanding was correct on every major point:
 #### **getClass() - (Class object)
 - Actually getClass() represent current class. It hold Metadata references(Klass Metadata), Reflection, Serialization are achieved by this Class.
 - Execution order,
-	1. Object Header has 
+	1. Object Header has two part first part Mark down, Second part Klass pointer(Holds Metadata references).
+	2. During class loading Class Metadata creates. It holds Constructor, Fields count.
+	3. Based on metadata information object allocates memory into heap.
+	4. It normal flow Object klass pointer -> Meta data -> Metaspace.
+	5. If, access via java implementation or developer use getClass method to make modification (Jackson's Serialization, Spring Boot's & Tomcat Server Reflections).
 #### **Hashmap, LinkedHashMap, HashSet working principles
 - By default each 16 buckets are allocates, each buckets can hold unlimited data either linked list or Red-black tree.
 - When hash collision happen beyond 8th record and buckets under 64 size it will resize the buckets until reaches 64 buckets size. When buckets get resized it rehash which stored all the hash and restores based on new hash into relevant buckets. That's why, Hashmap use find buckets or index based on (n - 1)  & hash. n for size of the buckets existing.
