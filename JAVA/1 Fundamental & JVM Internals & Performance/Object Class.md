@@ -31,10 +31,12 @@ Your understanding was correct on every major point:
 
 #### **HashCode
 - By default, object creates it's generate unique hash for memory (Mark down) + memory address. but if it will overrides will creates new hash.
-
 #### **Equals 
 - By default, it will check reference both are same or not.
-
+#### **getClass() - (Class object)
+- Actually getClass() represent current class. It hold Metadata references(Klass Metadata), Reflection, Serialization are achieved by this Class.
+- Execution order,
+	1. Object Header has 
 #### **Hashmap, LinkedHashMap, HashSet working principles
 - By default each 16 buckets are allocates, each buckets can hold unlimited data either linked list or Red-black tree.
 - When hash collision happen beyond 8th record and buckets under 64 size it will resize the buckets until reaches 64 buckets size. When buckets get resized it rehash which stored all the hash and restores based on new hash into relevant buckets. That's why, Hashmap use find buckets or index based on (n - 1)  & hash. n for size of the buckets existing.
