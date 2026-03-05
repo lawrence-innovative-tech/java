@@ -1,4 +1,8 @@
+#### **Requisites 
+- [[Memory Model#**Thread Mechanism|Introduction part]]
+- 
 
-#### [[Memory Model#**Thread Mechanism|Introduction]]
+#### **Purpose
+- 
 
 

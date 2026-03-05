@@ -36,11 +36,14 @@ Your understanding was correct on every major point:
 #### **getClass() - (Class object)
 - Actually getClass() represent current class. It hold Metadata references(Klass Metadata), Reflection, Serialization are achieved by this Class.
 - Execution order,
-	1. Object Header has two part first part Mark down, Second part Klass pointer(Holds Metadata references).
+	1. Object Header has two part first part [[#**Mark Word|Mark word]], Second part Klass pointer(Holds Metadata references).
 	2. During class loading Class Metadata creates. It holds Constructor, Fields count.
 	3. Based on metadata information object allocates memory into heap.
 	4. It normal flow Object klass pointer -> Meta data -> Metaspace.
 	5. If, access via java implementation or developer use getClass method to make modification (Jackson's Serialization, Spring Boot's & Tomcat Server Reflections).
+#### **Mark Word
+- Mark word represent state of the object
+
 #### **Hashmap, LinkedHashMap, HashSet working principles
 - By default each 16 buckets are allocates, each buckets can hold unlimited data either linked list or Red-black tree.
 - When hash collision happen beyond 8th record or Threshold 0.75 load factor, the buckets under 64 size, it will resize the buckets reaches buckets size until 64. When buckets get resized it generate existing element into rehash  and store it relevant buckets. That's why, Hashmap use find buckets or index based on (n - 1)  & hash. n for size of the buckets existing.
