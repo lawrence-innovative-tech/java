@@ -30,6 +30,7 @@ Your understanding was correct on every major point:
 - But, by default hashmap checks initially hashcode, if already buckets have values checks whether where both content are same using equals method. if same overrides or add new or consider new records. so when equals and hashcode both usage is powerful.
 #### **HashCode
 - By default, object creates it's generate unique hash for memory (Mark down) + memory address. but if it will overrides will creates new hash.
+- While object creation there is no hashcode present in mark word. It is fully optional but, when obj.hashCode() invoked mark word stores that hashcode into object header incense mark word.
 #### **Equals 
 - By default, it will check reference both are same or not.
 #### **getClass() - (Class object)
