@@ -42,8 +42,8 @@ Your understanding was correct on every major point:
 	4. It normal flow Object klass pointer -> Meta data -> Metaspace.
 	5. If, access via java implementation or developer use getClass method to make modification (Jackson's Serialization, Spring Boot's & Tomcat Server Reflections).
 #### **Mark Word
-- Mark word represent state of the object
-
+- Mark word in object's header, and represent runtime object state.
+- It can hold hashCode, Gc log, lock bits. It handle runtime object state efficiently, when, object.hashcode() called, it stores hashcode in the mark word( bits 10). Then the lightweight lock occur 
 #### **Hashmap, LinkedHashMap, HashSet working principles
 - By default each 16 buckets are allocates, each buckets can hold unlimited data either linked list or Red-black tree.
 - When hash collision happen beyond 8th record or Threshold 0.75 load factor, the buckets under 64 size, it will resize the buckets reaches buckets size until 64. When buckets get resized it generate existing element into rehash  and store it relevant buckets. That's why, Hashmap use find buckets or index based on (n - 1)  & hash. n for size of the buckets existing.
