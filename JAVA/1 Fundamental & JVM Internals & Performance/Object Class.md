@@ -29,7 +29,7 @@ Your understanding was correct on every major point:
 - If it override content and checks whether both have same content or not. if it both meets same it should allocates same buckets or it should be overrides.
 - But, by default hashmap checks initially hashcode, if already buckets have values checks whether where both content are same using equals method. if same overrides or add new or consider new records. so when equals and hashcode both usage is powerful.
 #### **HashCode
-- If class doesn't override hashcode, 
+- If class doesn't override hashcode, the object creates (object memory address + timestamp) as default hashcode. the hashcode store it in mark word.
 - By default, object creates it's generate unique hash for memory (Mark down) + memory address. but if it will overrides will creates new hash.
 - While object creation there is no hashcode present in mark word. It is fully optional but, when obj.hashCode() invoked mark word stores that hashcode into object header incense mark word.
 #### **Equals 
