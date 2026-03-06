@@ -29,6 +29,7 @@ Your understanding was correct on every major point:
 - If it override content and checks whether both have same content or not. if it both meets same it should allocates same buckets or it should be overrides.
 - But, by default hashmap checks initially hashcode, if already buckets have values checks whether where both content are same using equals method. if same overrides or add new or consider new records. so when equals and hashcode both usage is powerful.
 #### **HashCode
+- If class doesn't override hashcode, 
 - By default, object creates it's generate unique hash for memory (Mark down) + memory address. but if it will overrides will creates new hash.
 - While object creation there is no hashcode present in mark word. It is fully optional but, when obj.hashCode() invoked mark word stores that hashcode into object header incense mark word.
 #### **Equals 
@@ -43,7 +44,12 @@ Your understanding was correct on every major point:
 	5. If, access via java implementation or developer use getClass method to make modification (Jackson's Serialization, Spring Boot's & Tomcat Server Reflections).
 #### **Mark Word
 - Mark word in object's header, and represent runtime object state.
-- It can hold hashCode, Gc log, lock bits. It handle runtime object state efficiently, when, object.hashcode() called, it stores hashcode in the mark word( bits 10). Then the lightweight lock occur 
+- It can hold hashCode, Gc log, lock bits. It handle runtime object state efficiently, when, object.hashcode() called, it stores hashcode in the mark word( bits 10). When the lightweight lock(Single thread) occur the hashcode copied and stores in stack. it will applicable only the for synchronized block, method, class or lock the object, When heavyweight (Multi thread) hashcode stores in monitor point.
+- Bits for mark word,
+	1. 01 - normal (unlock)
+	2. 10 - Lightweight
+	3. 10 - heavyweight
+	4. 11 - gc logs
 #### **Hashmap, LinkedHashMap, HashSet working principles
 - By default each 16 buckets are allocates, each buckets can hold unlimited data either linked list or Red-black tree.
 - When hash collision happen beyond 8th record or Threshold 0.75 load factor, the buckets under 64 size, it will resize the buckets reaches buckets size until 64. When buckets get resized it generate existing element into rehash  and store it relevant buckets. That's why, Hashmap use find buckets or index based on (n - 1)  & hash. n for size of the buckets existing.
