@@ -51,6 +51,9 @@ Your understanding was correct on every major point:
 	2. 10 - Lightweight
 	3. 10 - heavyweight
 	4. 11 - gc logs
+#### **Inner class Rules
+- Inner class or Method local class are while compile time it creates separate class file. But Inner class file hold outclass file reference. The reference field creates in compile time and it should be in final.
+- Outer class file held instance variables with value, if, inner class use that variable it should be final or effective final. Because of, inner class copied outer class variable's value. If, runtime the value gets updated inner class never known because of it call by value not a reference. The lambda expression also following the same concept, but handles different ways.
 #### **Hashmap, LinkedHashMap, HashSet working principles
 - By default each 16 buckets are allocates, each buckets can hold unlimited data either linked list or Red-black tree.
 - When hash collision happen beyond 8th record or Threshold 0.75 load factor, the buckets under 64 size, it will resize the buckets reaches buckets size until 64. When buckets get resized it generate existing element into rehash  and store it relevant buckets. That's why, Hashmap use find buckets or index based on (n - 1)  & hash. n for size of the buckets existing.
