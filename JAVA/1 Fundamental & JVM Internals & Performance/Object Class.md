@@ -45,7 +45,7 @@ Your understanding was correct on every major point:
 	5. If, access via java implementation or developer use getClass method to make modification (Jackson's Serialization, Spring Boot's & Tomcat Server Reflections).
 #### **Mark Word
 - Mark word in object's header, and represent runtime object state.
-- It can hold hashCode, Gc log, lock bits. It handle runtime object state efficiently, when, object.hashcode() called, it stores hashcode in the mark word( bits 10). When the lightweight lock(Single thread) occur the hashcode copied and stores in stack. it will applicable only the for synchronized block, method, class or lock the object, When heavyweight (Multi thread) hashcode stores in monitor point.
+- It can hold hashCode, Gc log, lock bits. It handle runtime object state efficiently, when, object.hashcode() called, it stores custom hashcode in the mark word( bits 10). When the lightweight lock(Single thread) occur the hashcode copied and stores in stack. it will applicable only the for synchronized block, method, class or lock the object, When heavyweight (Multi thread) hashcode stores in monitor point.
 - Bits for mark word,
 	1. 01 - normal (unlock)
 	2. 10 - Lightweight
