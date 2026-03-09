@@ -29,6 +29,7 @@
   
   ```
 
-#### **Thread lifecycle
-- 
+#### **Thread lifecycle & Internal flow
+- **New State -** When thread creation, it allocates memory in heap, with fields.
+- **Runnable -** When thread start(), Jvm calls os to create native thread and allocates stack of that thread, creates TLS (Thread local storage) for get thread info in every time with unique and thread can shared this each. PC counter creates and sta
 
