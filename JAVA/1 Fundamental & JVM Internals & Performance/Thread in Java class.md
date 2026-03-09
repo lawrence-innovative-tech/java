@@ -33,7 +33,7 @@
 - **New State -** When thread creation, it allocates memory in heap, with fields. isAlive()=false by default.
 - **Runnable -** When thread start(), Jvm calls os to create [[Memory Model#**Pre-emptive Multi-Threading**|native thread and allocates stack]] of that thread, creates TLS (Thread local storage) for get thread info in every time with unique and thread can shared this each. PC counter creates and start stack frame. If, target not null initiate run method.
 - **Block :**
-	1. If, Thread enters in Synchronized block or method, Mark word stores current thread details. It's uncontented using CAS. so, following thread should be wait. Here, Jvm handles few iteration with short-brief. Current thread complete works or exit method mark word reset.
+	1. If, Thread enters in Synchronized block or method, Mark word stores current thread lock state. It's uncontented using CAS. so, following thread should be wait. Here, Jvm handles few iteration with short-brief. Current thread complete works or exit method mark word reset.
 	2. **Re-entrant Lock -** It explicit locks so, lock or pause the object until, unlock that object, and tryLock() helps to lock particular time period.
 	3. wait method never locks current object instead pause stack execution and added in waiting queue, os thread to park state. Externally triggers Notify or NorifyAll method waiting queue to entry queue and os unpark and reschedules that thread. If, wait with timeout, auto start when time completed.
 	4. Sleep method pause current executions of that object and time exceeds reschedule.
