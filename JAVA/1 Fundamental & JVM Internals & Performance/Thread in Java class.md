@@ -43,4 +43,5 @@
 - When all the user thread exit. Jvm's daemon thread stop by Jvm.
 - Instance synchronized method or block locking mechanism using Mark word. But, static lock by class.
 
-
+#### **Executor Service
+- Executor service follows normal thread lifecycle, but while pool creation time thread are created at start-up. Task submission are adding queue. Internal loop take() or poll() task from queue start execution. If, queue is empty thread are waiting state os thread to park state for resource.
