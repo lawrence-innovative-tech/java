@@ -1,4 +1,8 @@
 
+#### **Spring Application Execution order
+- Start executing main method, the method contains SpringApplication.run() initiate start-up spring boot application, creates custom classloader, listeners and environment preparation(reading properties form property file or yml file).
+- ApplicationContext object creates then spring collects @Configuration, @ComponentScan and [[#**Auto-Configuration|@EnableAutoConfiguration]] necessary beans register in BeanDefination.
+- After ApplicationContext refresh, the beans are creates automatically
 #### **Spring Container
 - Manage all the bean's lifecycles, creation to destroy.
 - Spring container and IoC both are same in Spring framework.
@@ -48,3 +52,4 @@
 - Spring AOP
 - Ready to use.
 - Destroy.
+
