@@ -2,7 +2,8 @@
 #### **Spring Application Execution order
 - Start executing main method, the method contains SpringApplication.run() initiate start-up spring boot application, creates custom classloader, listeners and environment preparation(reading properties form property file or yml file).
 - ApplicationContext object creates then spring collects @Configuration, @ComponentScan and [[#**Auto-Configuration|@EnableAutoConfiguration]] necessary beans register in BeanDefination.
-- After ApplicationContext refresh, the beans are creates automatically
+- After ApplicationContext refresh, the beans are creates automatically (In certain order).
+  E.x If, Application context has HibernateJpaAutoConfiguration spring check @ConditionalOnClass(javax.data.DataSource.class), @ConditionalOnMissingBean(type = "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean").
 #### **Spring Container
 - Manage all the bean's lifecycles, creation to destroy.
 - Spring container and IoC both are same in Spring framework.
@@ -37,7 +38,7 @@
 	3. Field Injection
 - Key features of Constructor Injector and why it's recommended
 	- **Immutability -** Via constructor injection can protect bean using final keyword, the final should allows direct initialization and constructor to assign values. But, field injection couldn't achieve. Because, if initialize at creates via new keyword it creates object of every usage so, can't achieve singleton design patterns.
-	- **Type safety (fail safety & fail fast) - ** Constructor injection forced to required all necessary bean, If it missed the application fail fast. But, field injection initial call empty constructor. So, no guarantee  
+	- **Type safety (fail safety & fail fast) - **Constructor injection forced to required all necessary bean, If it missed the application fail fast. But, field injection initial call empty constructor. So, no guarantee.
 	- **Constructor Injection -** It's achieves IoC principles. 
 	- **Unit testing -** Easy to integrate unit testing, If using field injection should use @MockBean annotation. 
 #### **Bean Lifecycle
