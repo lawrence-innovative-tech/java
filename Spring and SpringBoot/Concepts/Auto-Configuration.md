@@ -54,7 +54,8 @@
 - Ready to use.
 - Destroy.
 
-
 #### **BeanFactory Vs ApplicationContext
 - Bean factory has minimal configuration spring boot does not support instead SpringBoot extends bean factory and use.
 - Bean factory doesn't support AOP concepts, and by default it's Lazy initialization.
+
+#### **
