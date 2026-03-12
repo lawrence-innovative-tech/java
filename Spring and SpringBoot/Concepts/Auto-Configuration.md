@@ -58,4 +58,12 @@
 - Bean factory has minimal configuration spring boot does not support instead SpringBoot extends bean factory and use.
 - Bean factory doesn't support AOP concepts, and by default it's Lazy initialization.
 
-#### **
+#### **Mark interface
+- Mark a class to JVM or framework can change that behaviour that class.
+- Mark class does not have methods, fields but it instruct jvm to perform or permission of that class eligible.
+- E.x Serializable not every object only implement Serializable class.
+- Mark interfaces Serializable, Cloneable, Randomable.
+
+#### **Serialization
+- Serialization used to convert object stream to byte stream. It convert data to raw bytes, So easily changes would happen (Malicious).
+- It used to store object data to file, cache, network transfer.
