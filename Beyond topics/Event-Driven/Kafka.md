@@ -12,3 +12,8 @@
 - KRaft controls in defined control nodes, A node may have two roles one brokers and controllers or combined. It inside kafka.
 - Kafka Raft is a consensus algorithm to manages metadata of controllers.
 - Consensus protocol leader elections, the leader broadcast to every followers in certain time period. Every followers wait next time heartbeat if not received heartbeat within time calculate by followers it assumes leader is dead. Now, the followers become candidate sends RequestVote RPC protocol to every followers with last log term, now every followers checks two condition, who has latest lastlogterm and if equal or not lastlogindexterm. If yes reply "Yes" or "No". So, each controllers response of the election request. 
+#### **Broker
+- Broker is data worker or Storage. Stores all the messages from producer and deliver to consumers.
+- Broker allows replication of partitions, Partitions creates equal or below brokers. Because, Partition is copy of the message stores in brokers. 
+- Brokers controls by controllers, who leader of the partitions and followers. 
+- Topic is categories or Logical channels.
