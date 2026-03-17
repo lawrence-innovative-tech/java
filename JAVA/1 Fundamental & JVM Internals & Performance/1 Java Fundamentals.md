@@ -2,7 +2,7 @@
 ###### **Ref of Medium -** https://medium.com/platform-engineer/understanding-jvm-architecture-22c0ddf09722
 ### **What is JAVA 
 
-	Java is high level, Objexct-Oriented programming language, and Platform developed by SUN MicroSystem in 1995 (Now owned by Orcle).
+	Java is high level, Object-Oriented programming language, and Platform developed by SUN MicroSystem in 1995 (Now owned by Orcle).
 
 ### **Features of Java
 	1. Platform Independent : Build or Write once and Run anywhere(WORA).
@@ -144,7 +144,6 @@ java --module-path mods \
 	- This is how OSGi, plugin systems, web servers (Tomcat), etc. can run multiple versions of the same library safely.
 - The object memory allocation in heap, runs constructor through happen via this class.
 -  The link creates or happen via in this class( each class have its own pointer).
-- 
 #### **Question Bank for Learning
 1. JDK is enough to create jar file then what is the purpose of Maven the build tool and some plugins in needs to build jar why?
 2. The java packages are in JRE we are using java api to our application, so where it can load and how its represented in .class file.
