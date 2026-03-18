@@ -16,12 +16,14 @@
 - Consensus protocol leader elections, the leader broadcast to every followers in certain time period. Every followers wait next time heartbeat if not received heartbeat within time calculate by followers it assumes leader is dead. Now, the followers become candidate sends RequestVote RPC protocol to every followers with last log term, now every followers checks two condition, who has latest lastlogterm and if equal or not lastlogindexterm. If yes reply "Yes" or "No". So, each controllers response of the election request. 
 #### **Broker
 - Broker is data worker or Storage. Stores all the messages from producer and deliver to consumers.
-- Broker allows replication of partitions, Partitions creates equal or below brokers. Because, Partition is copy of the message stores in brokers. 
+- Broker allows replication of partitions.
+- Broker has only leader partition and follower in other replicas.
 - Brokers controls by controllers, who leader of the partitions and followers. 
 - Topic is categories or Logical channels.
 #### **Partition
-- Producer handles partition, partition configure based on requirement each partition has one leader and follower.
-- Producer instance decide which partition need to send message. If, message has key it hash(key) % Partitions to identify which partition leader received message. No key it used RoundRobinMessage or StricklyMessage technics to send message. It called Partitioner handles partition.
+- Controller creates partition if configured. Broker holds topics and partitions.
+- Never creates partition beyond broker because each broker should hold one partition of each topic either leader or follower.
+- Partitioner in producer instance it decide which partition to send message, so if message send with key using hash(key) % list of leader partitions. if no key default raft use Strick message partition. it send message one partition when it reach time or storage based limit.
 #### **Producer 
 - Producer is application or instance. It connects kafka broker dynamically using boostrap.properties = broker1@9092,broker2@9092.
 - Producer check partition metadata leader. By default 5min once, it configured in metadata.max.age.ms = 300000ms.
