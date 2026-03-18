@@ -13,7 +13,7 @@
 #### **KRaft
 - KRaft controls in defined control nodes, A node may have two roles one brokers and controllers or combined. It inside kafka.
 - Kafka Raft is a consensus algorithm to manages metadata of controllers.
-- Consensus protocol leader elections, the leader broadcast to every followers in certain time period. Every followers wait next time heartbeat if not received heartbeat within time calculate by followers it assumes leader is dead. Now, the followers become candidate sends RequestVote RPC protocol to every followers with last log term, now every followers checks two condition, who has latest lastlogterm and if equal or not lastlogindexterm. If yes reply "Yes" or "No". So, each controllers response of the election request. 
+- Consensus protocol leader elections, the leader broadcast to every followers in certain time period. Every followers wait next time heartbeat if not received heartbeat within time calculate by followers it assumes leader is dead. Now, the followers become candidate sends RequestVote RPC protocol to every followers with last log term, now every followers checks two condition, who has latest lastlogterm and if equal or not lastlogindexterm. If yes reply "Yes" or "No". So, each controllers response of the election request.
 #### **Broker
 - Broker is data worker or Storage. Stores all the messages from producer and deliver to consumers.
 - Broker allows replication of partitions.
@@ -28,4 +28,12 @@
 - Producer is application or instance. It connects kafka broker dynamically using boostrap.properties = broker1@9092,broker2@9092.
 - Producer check partition metadata leader. By default 5min once, it configured in metadata.max.age.ms = 300000ms.
 - Producer request to broker to fetch partitions details, partitioner decide which partition to push or publish message.
+
+#### **Consumer group
+- Each topics has one consumer group consumer are register in consumer group.
+- Group co-ordinate (broker any broker become) handles specific consumer group. Co-ordinate assign as group leader. That group leader instruct to consumer connects partition leader directly.
+- Consumer is application or instance. Each consumer connects through TCP. 
+- Consumer checks time frequently not push notification like. because of TCP connection.
+- Each consumer connects exactly connect only one partition leader so, beyond of consumer waste. eight consumer <= partition.
+- Consumer use by default technics is cooperative sticky.
   
