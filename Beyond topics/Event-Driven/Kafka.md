@@ -1,6 +1,7 @@
 #### **Purpose
 - Kafka is Event-driven architecture to process or stream data asynchronously. 
 - Kafka 2.x uses zookeeper, 3.x uses zookeeper and kraft, 4.x uses only kraft.
+- Kafka order Grandtuee.
 #### **Zookeeper and KRaft Responsibility
 - Maintain List of topics.
 - Decide leader of the partition and followers.
