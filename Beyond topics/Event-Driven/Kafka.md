@@ -1,7 +1,8 @@
 #### **Purpose
 - Kafka is Event-driven architecture to process or stream data asynchronously. 
 - Kafka 2.x uses zookeeper, 3.x uses zookeeper and kraft, 4.x uses only kraft.
-- Kafka order Grandtuee.
+- Kafka order Grantee.
+- Create replication.factor <= broker_count.
 #### **Zookeeper and KRaft Responsibility
 - Maintain List of topics.
 - Decide leader of the partition and followers.
@@ -18,3 +19,4 @@
 - Broker allows replication of partitions, Partitions creates equal or below brokers. Because, Partition is copy of the message stores in brokers. 
 - Brokers controls by controllers, who leader of the partitions and followers. 
 - Topic is categories or Logical channels.
+- 
