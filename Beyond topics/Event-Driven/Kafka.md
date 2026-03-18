@@ -2,7 +2,7 @@
 - Kafka is Event-driven architecture to process or stream data asynchronously. 
 - Kafka 2.x uses zookeeper, 3.x uses zookeeper and kraft, 4.x uses only kraft.
 - Kafka order Grantee.
-- Create replication.factor <= broker_count.
+- Create replication. Factor <= broker count.
 #### **Zookeeper and KRaft Responsibility
 - Maintain List of topics.
 - Decide leader of the partition and followers.
@@ -19,4 +19,11 @@
 - Broker allows replication of partitions, Partitions creates equal or below brokers. Because, Partition is copy of the message stores in brokers. 
 - Brokers controls by controllers, who leader of the partitions and followers. 
 - Topic is categories or Logical channels.
-- 
+#### **Partition
+- Producer handles partition, partition configure based on requirement each partition has one leader and follower.
+- Producer instance decide which partition need to send message. If, message has key it hash(key) % Partitions to identify which partition leader received message. No key it used RoundRobinMessage or StricklyMessage technics to send message. It called Partitioner handles partition.
+#### **Producer 
+- Producer is application or instance. It connects kafka broker dynamically using boostrap.properties = broker1@9092,broker2@9092.
+- Producer check partition metadata leader. By default 5min once, it configured in metadata.max.age.ms = 300000ms.
+- Producer request to broker to fetch partitions details, partitioner decide which partition to push or publish message.
+  
