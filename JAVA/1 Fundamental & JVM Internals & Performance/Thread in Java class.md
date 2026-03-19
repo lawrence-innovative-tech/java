@@ -42,6 +42,10 @@
 #### **Notes:
 - When all the user thread exit. Jvm's daemon thread stop by Jvm.
 - Instance synchronized method or block locking mechanism using Mark word. But, static lock by class.
-
+#### **Volatile
+- Each thread has it's own local cache so value not shared among. But some cases the value required to other thread. So, volatile write field into main memory not cpu cache.
+- Atomic Integer inside use volatile value field.
+#### **Thread Local Storage
+- Single TLS object maintain thread own copies without conflict.
 #### **Executor Service
 - Executor service follows normal thread lifecycle, but while pool creation time thread are created at start-up. Task submission are adding queue. Internal loop take() or poll() task from queue start execution. If, queue is empty thread are waiting state os thread to park state for resource.
