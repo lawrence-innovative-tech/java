@@ -6,4 +6,5 @@
 	3. ReadWriteLock
 	4. StampedLock
 #### **Intrinsic Lock
-- Lock mechanism handles by jvm. It object level locking. When 
+- Lock mechanism handles by jvm. It object level locking. When object enters into synchronized block or method mark thread details in Mark work part which in object header.
+- The follower thread never initiate become waiting stage added into waiting stage.
