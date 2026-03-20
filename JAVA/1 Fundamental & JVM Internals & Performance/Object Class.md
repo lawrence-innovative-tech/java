@@ -32,9 +32,27 @@ Your understanding was correct on every major point:
 - If class doesn't override hashcode, the object creates (object memory address + timestamp) as default hashcode. the hashcode store it in mark word.
 - By default, object creates it's generate unique hash for memory (Mark down) + memory address. but if it will overrides will creates new hash.
 - While object creation there is no hashcode present in mark word. It is fully optional but, when obj.hashCode() invoked mark word stores that hashcode into object header incense mark word.
-- **HashCode VS IdentityHashCode -** Initially, both are hold same value (object address + timestamp). But, when hashcode overrides by obj.hashCode(), Still identityhashcode never changed, it's consent.
 #### **IdentityHashCode
-- 
+- Initially, IdentityHashCode and HashCode both are hold same value (object address + timestamp). But, when hashcode overrides by obj.hashCode() HashCode will updated, Still identityhashcode never changed, it's consent.
+- The technique to prevent deadlock scenario. Because, every object must have identityhashcode comparison of two object locking in minimal object lock first.
+```java
+
+Account acc1 = new Account();
+Account acc2 = new Account();
+
+Lock firstLock = acc1.getLock();
+Lock SecondLock = acc2.getLock();
+
+if (System.identityHashCode(acc1) < System.identityHashCode(acc2)) {
+	firstLock = acc1.getLock();
+	secondLock = acc2.getLock();
+} else {
+	firstLock = acc2.getLock();
+	secondLock = acc1.getLock();
+}
+
+```
+
 #### **Equals 
 - By default, it will check reference both are same or not.
 #### **getClass() - (Class object)
