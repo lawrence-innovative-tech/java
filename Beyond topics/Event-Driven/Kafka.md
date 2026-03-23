@@ -36,4 +36,10 @@
 - Consumer checks time frequently not push notification like. because of TCP connection.
 - Each consumer connects exactly connect only one partition leader so, beyond of consumer waste. eight consumer <= partition.
 - Consumer use by default technics is cooperative sticky.
+
+#### **Offset
+- Each partition has offset, this offset maintains consumed record in the kafka.
+- offset start with 1.
+- Offset concept really helps to maintain continues after crashes, restarted or rebalanced.
+
   
