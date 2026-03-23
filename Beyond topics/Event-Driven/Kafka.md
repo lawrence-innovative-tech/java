@@ -30,16 +30,24 @@
 - Producer request to broker to fetch partitions details, partitioner decide which partition to push or publish message.
 
 #### **Consumer group
+- Each topics may have multiple consumer group can process the same records.
+- Each consumer group has own _\_committed-offset_, so it may process same records in each group. So, creates group different functionality and different process effectively.
 - Each topics has one consumer group consumer are register in consumer group.
 - Group co-ordinate (broker any broker become) handles specific consumer group. Co-ordinate assign as group leader. That group leader instruct to consumer connects partition leader directly.
 - Consumer is application or instance. Each consumer connects through TCP. 
 - Consumer checks time frequently not push notification like. because of TCP connection.
 - Each consumer connects exactly connect only one partition leader so, beyond of consumer waste. eight consumer <= partition.
 - Consumer use by default technics is cooperative sticky.
-
+#### **Rebalancing
+- Kafka guarantee each consumer group each consumer connects only one partition at a time.
+- Consumer group listen consumer heartbeat, when add new consumer or leaves or crashed, and new partition added kafka consumer group decide to re-distribute partition to consumer, These consumer follows committed offset value to continues the process. 
 #### **Offset
 - Each partition has offset, this offset maintains consumed record in the kafka.
 - offset start with 1.
 - Offset concept really helps to maintain continues after crashes, restarted or rebalanced.
+#### **Committed offset
+- Stores offset value in kafka side so, guarantee to new consumer start process to current offset value.
+- **Current offset -** maintain by consumer locally.
+
 
   
