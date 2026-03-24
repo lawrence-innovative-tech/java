@@ -3,8 +3,11 @@
 - ngOnChanges - it detect changes @Input values from parent, instantly fires child component child detect and made changes using Simple Changes.
 - ngOnInit - run only once, after ngOnChanges, initialized necessary thinks to be here, external api, and internal process. Reactive programming invoke this to preform.
 - ngDoCheck - Detect after update form, if there any changes or there.
-- ngAfterContentInit - Initiating content of that components.
-- ngAfterContectInitCheck 
+- ngAfterContentInit - The has content child has use that parent content.
+- ngAfterContectChecked - After content initialling it detect changes and updates.
+- ngAfterViewInit - It fully responsible for child content the own content. it emit output to parent usages.
+- ngAfterViewChecked - After changes it will detect and updates.
+- ngOnDestory - unsubcribed, setTimeOut, setTimeInterval async process may guide to memory leak. Destoty wait untill it exist or clear.
 
 #### **Directives
 - Made changes on existing DOM elements or components.
