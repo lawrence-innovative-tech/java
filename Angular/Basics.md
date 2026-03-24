@@ -1,9 +1,9 @@
 #### **Angular Lifecycle
 - Constructor - When Typescript component calls, it invoke constructor, Constructor inject dependencies.
-- ngOnChanges - it detect changes on element and give to ts.
-- ngOnInit - initialized necessary thinks to be here, external api, and internal process. Reactive programming invoke this to preform.
-- ngDoCheck - Detact after update form, if there any changes or there.
-- ngAfterContentInit - Initliazing content of that components.
+- ngOnChanges - it detect changes @Input values from parent, instantly fires child component child detect and made changes using Simple Changes.
+- ngOnInit - run only once, after ngOnChanges, initialized necessary thinks to be here, external api, and internal process. Reactive programming invoke this to preform.
+- ngDoCheck - Detect after update form, if there any changes or there.
+- ngAfterContentInit - Initiating content of that components.
 - ngAfterContectInitCheck 
 
 #### **Directives
