@@ -10,7 +10,7 @@
 - Crud repository only provides Crud operations.
 
 #### **@Transactional
-- @Treansactional annotation manages ACID principle of Database.
+- @Treansactional annotation manages ACID protocols of Database.
 - When @Transactional annotated method or class invokes Proxy calls it call EntityManagerFactory to get Entity Manager and binds to current thread using Thread-local mechanism. Each transaction is unique till the end. But it allows Propagation (means @Transactional have another @Transactional transaction bind or separate).
 	- Propagations
 		1. REQUIRED - By default, required it bind both transaction together.
@@ -22,6 +22,7 @@
 - Problems of @Transactional annotations
   1. If method invoke inside @Transactional method, it won't work because proxy never called it executes normal.
   2. After Entity manager creates thread binds, begin the statement then executes our code or method it stores first level cache and modification happens methods end entity manager commit and if it throw Runtime exception it rollback. if user handles catches the error spring it it not a exception so, it commit the transaction.
+  3. It never catch checked exception, until rolebackfor = Exception.class, and if current method handles exception also spring thinks everything goods so, it commit the transaction.
 
 #### **ACID**
 Atomicity - complete or nothing.
