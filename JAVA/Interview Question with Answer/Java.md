@@ -6,4 +6,8 @@
 
 2. **A class have 100 fields but only 50 field should serializable ? How can you achieve?
 	- If result in json serialization, can use @JsonIgnore or @JsonIgnoreProperties because Jackson uses reflection for serialization.
-	- Or Exciplity hanldes using reflection. ----- but not sure
+	- Or Explicitly handles using reflection. \----- but not sure. implicitly
+	
+3. **What is Stereo type springboot ?
+	- Web / Rest layer, service layer, data layer represented @RestController, @Controller, @Service, @Repository but, all are inside using @Component annotation.
+	- 
