@@ -27,6 +27,8 @@
 #### **Idempotency
 - Multiple request sends server returns same response after first execution.
 - Mostly, it need for payment, order placement like that.
-- [[#**Rate Limiter|Rate limiter]] and idempotencies both are different. 
+- [[#**Rate Limiter|Rate limiter]] and idempotencies both are different.
+- When idempotency is help for retry api calls or multiple api calls same api calls differently. It more helps.
+- Recommended solution for, Redis with microservice. 
 #### **Rate Limiter
 - 
