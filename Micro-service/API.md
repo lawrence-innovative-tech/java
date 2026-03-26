@@ -22,4 +22,11 @@
 
 #### **RESTFULL API
 - RESTFULL api same as rest api, but additionally six rules included.
+
+
+#### **Idempotency
+- Multiple request sends server returns same response after first execution.
+- Mostly, it need for payment, order placement like that.
+- [[#**Rate Limiter|Rate limiter]] and idempotencies both are different. 
+#### **Rate Limiter
 - 
