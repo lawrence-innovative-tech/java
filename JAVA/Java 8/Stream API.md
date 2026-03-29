@@ -69,11 +69,11 @@
 
 ##### **Deduplicating and Sorting Operations
 
-|Operation|Signature|Description|Introduced|
-|---|---|---|---|
-|**distinct**|`Stream<T> distinct()`|Removes duplicate elements based on `equals()`.|Java 8|
-|**sorted**|`Stream<T> sorted()`|Sorts elements in natural order.|Java 8|
-|**sorted**|`Stream<T> sorted(Comparator<? super T> comparator)`|Sorts elements using a custom comparator.|Java 8|
+| Operation    | Signature                                            | Description                                     | Introduced |
+| ------------ | ---------------------------------------------------- | ----------------------------------------------- | ---------- |
+| **distinct** | `Stream<T> distinct()`                               | Removes duplicate elements based on `equals()`. | Java 8     |
+| **sorted**   | `Stream<T> sorted()`                                 | Sorts elements in natural order.                | Java 8     |
+| **sorted**   | `Stream<T> sorted(Comparator<? super T> comparator)` | Sorts elements using a custom comparator.       | Java 8     |
 
 ##### **Peeking and Gathering Operations
 
