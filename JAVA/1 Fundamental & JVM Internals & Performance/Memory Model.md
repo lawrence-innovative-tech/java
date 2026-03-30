@@ -18,7 +18,7 @@
 - More Relation between Heap and GC, It will update on GC part.
 - G1GC and ZGC
 	- G1GC -> Divide gc to equal size of region, region has young and old part. Perform prioritize wise clean object, Less time to pause the application to mark unreachable objects.
-	- ZGC -> Using G1 gc techniques but advanced, divide into zpages, and pc holds remarked, relocated details so, only < 10ms to stop the application.
+	- ZGC -> Using G1 gc techniques but advanced, divide into zpages (divided object into size based 2mb, 32 mb, 100mb), and object reference pointer holds remarked, relocated details. It in stack frame so, only < 10ms to stop the application.
 #### **Stack
 - Java by default supports stack, so when started working into to java should process on [[#**Thread Mechanism|thread]].
 - Each thread has it's own stack to stores temporary execution values.
