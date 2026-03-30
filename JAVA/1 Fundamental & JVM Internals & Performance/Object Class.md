@@ -98,4 +98,5 @@ if (System.identityHashCode(acc1) < System.identityHashCode(acc2)) {
 	- Error
 		- **Error** is unrecoverable problems. It system/Jvm aren't recover by application.
 #### **Covariant
-- 
+- A class in is-relationship, both have same method but, object creates in child class reference in parent class. So, parent class reference must return parent method but covariant returns child class methods that is called covariant.
+ 

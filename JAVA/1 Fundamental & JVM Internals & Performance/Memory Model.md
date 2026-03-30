@@ -16,6 +16,9 @@
 - Long live object are moved to old generation after runs long GC.
 - Minor GC fast pause short time, but Major GC Slow/ Long Pause time, in java 25 Generational Shenandoah reduced Old generation  pausing time. \*Update on GC Part.
 - More Relation between Heap and GC, It will update on GC part.
+- G1GC and ZGC
+	- G1GC -> Divide gc to equal size of region, region has young and old part. Perform prioritize wise clean object, Less time to pause the application to mark unreachable objects.
+	- ZGC -> Using G1 gc techniques but advanced, divide into zpages, and pc holds remarked, relocated details so, only < 10ms to stop the application.
 #### **Stack
 - Java by default supports stack, so when started working into to java should process on [[#**Thread Mechanism|thread]].
 - Each thread has it's own stack to stores temporary execution values.

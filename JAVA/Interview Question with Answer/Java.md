@@ -10,4 +10,5 @@
 	
 3. **What is Stereo type springboot ?
 	- Web / Rest layer, service layer, data layer represented @RestController, @Controller, @Service, @Repository but, all are inside using @Component annotation.
-	- 
+4. [[Object Class#**Covariant|Covariant]]
+5. 
