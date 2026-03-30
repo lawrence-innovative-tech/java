@@ -97,3 +97,5 @@ if (System.identityHashCode(acc1) < System.identityHashCode(acc2)) {
 				- RuntimeException (Unchecked Exception). It validate or unexpected exception it may or not occur.
 	- Error
 		- **Error** is unrecoverable problems. It system/Jvm aren't recover by application.
+#### **Covariant
+- 
