@@ -80,6 +80,7 @@ if (System.identityHashCode(acc1) < System.identityHashCode(acc2)) {
 - When collision reaches 64 buckets 8 beyond the buckets records it converts into Red-Black tree for faster getting result. It maintain higher memory so that java uses initially LinkedList and threshold for table in 64 buckets.
 - **For concurrency -** If buckets has empty CAS(Compare And Swap) success, just insert and come back. followed insertion request are in synchronized path. The lock only for head of the node. so that another buckets still update. if CAS failed tries until it finishes it work.
 - **Node -** both HashMap or hash related all are working same principle the buckets allocation the core logic are same, but their purpose it different and data are different.
+- **One point -** LinkedHashMap separated used DoublyLinkedList to maintain orders, rest handles thinks are same in hashmap. 
 - **Reference images path -**
 	1. ![[internal_working_hashmap_1.png]]
 	2. ![[internal_working_hashmap_2.png]]
