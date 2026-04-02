@@ -1,4 +1,4 @@
-1. **String content pool and why String is mutable?**
+1. **String constant pool and why String is mutable?**
 	- Memory Efficiency -> more string can occur easily so, java design SCP for storing string. String literal directly stores SCP. new String creates forces to create object heap and heap points to SCP. That'swhy heap object intern() method reference comparison become true. 
 	- Thread safe, mutable content read-only so multiple thread multiple times read only same content.
 	- Hashcode generation, By default hash code generates by memory address + timestamp. String overrides hashCode and equals methods based on value. If it immutable everytime to generate hashcode but it one time generated and use it.
@@ -11,4 +11,7 @@
 3. **What is Stereo type springboot ?
 	- Web / Rest layer, service layer, data layer represented @RestController, @Controller, @Service, @Repository but, all are inside using @Component annotation.
 4. [[Object Class#**Covariant|Covariant]]
-5. 
+5. **2PC ->** 2 phase commit, Prepare request for all the participants and sent request each participants perform and lock their transactions, and waiting for all the service to respond back success or failure. if success send commit instruction to all the participants, if failed rollback.
+6. **Saga pattern ->** Choreography, Orchestration | saga pattern rollback means, compensation transaction, it hanldes
+	1. Choreography - Eventual consistency, Service to service communicates eventual each service perform their action, performance success pass to next step if failed pass event to previous unstill start transaction to rollback.
+	2. Orchestration - Central control transaction, Central engine decide to to next or rollback to previous stage.
