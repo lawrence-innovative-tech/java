@@ -45,6 +45,10 @@
 - Each partition has offset, this offset maintains consumed record in the kafka.
 - offset start with 1.
 - Offset concept really helps to maintain continues after crashes, restarted or rebalanced.
+- auto.reset.offset not always process when offset cleared or topic recreates, creates new only uses. and types, 
+	1. earliest - always start with first.
+	2. latest - start processing after new entry.
+	3. none - kafka will throw exception.
 #### **Committed offset
 - Stores offset value in kafka side so, guarantee to new consumer start process to current offset value.
 - **Current offset -** maintain by consumer locally.
