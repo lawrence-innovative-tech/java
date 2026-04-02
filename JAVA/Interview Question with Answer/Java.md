@@ -16,6 +16,6 @@
 	1. Choreography - Eventual consistency, Service to service communicates eventual each service perform their action, performance success pass to next step if failed pass event to previous unstill start transaction to rollback.
 	2. Orchestration - Central control transaction, Central engine decide to to next or rollback to previous stage.
 7. **Transaction Outbox pattern ->** Atomicity, transaction is cross functionality guarantee transaction management.
-	1. e.x when one action success, system require process two or more cross functional action with guarantee, Like when, order has been placed system perform both inventory service to produce message and assign delivery partner to assign. if one filed rollback the transaction.
-	2. Kafka's EOS or OMS or ALO semantics helps to achieve outbox pattern. If produce successfully produce message to kafka, but db transaction or other kafka produce will failed, it won't commit the transaction. But never get back produced message so, set consumer config to isolation.level = read_commited, it only process committed transactions. If, multiple message produced but the only one transaction should process consumer tight it handles using idempotency.
+	1. The action with outbox table for track, kafka messages guarantee process with idempotency because kafka published event according to commitment. 
+	2. e.x when one action success, system require process two or more cross functional action with guarantee, Like when, order has been placed system perform both inventory service to produce message and assign delivery partner to assign. if one filed rollback the transaction.
 	3. database side normal rollback operation to rollback if co works failed.
