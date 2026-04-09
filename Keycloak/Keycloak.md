@@ -16,7 +16,9 @@
 	2. Assign group -> group has user.
 	3. Subgroup under group both access point have that particular user.
 #### **OIDC (OpenID Connect)
+- It wraps OAuth 2.0 + user details.
 - It modern way to authorization, it hold user details to user permission (OAuth 2.0).
 - SAML uses heavy xml, but it holds jwt with json easy to carry.
 #### **OAuth 2.0
 - It maintain only authorization alone.
+- Fully redesigned for token based authorization, instead of older version 1.0 signature based. 
