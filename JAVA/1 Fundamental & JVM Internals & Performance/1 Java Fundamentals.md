@@ -154,6 +154,7 @@ java --module-path mods \
 	- Yes, It's possible because **JVM architecture is isolates class for their class loader boundaries.** 
 	- Tomcat web server have Test.war and Test.war1 but both war file's classes in identical. But each war file has different Classloader. so, JVM consider both are different application so its load. (Tomcat provides each war have its own Classloader). 
 	- **Spring DevTools also using the classloader in different purposes. It's should be Update in Spring Learning Part. 
+	- Multi level Classloaders cause subtle bug, When classloader A and B loads same class and during  class cast, jvm only checks Class object which different so, class cast exception.
 2. **Why is String.class loaded by the Bootstrap loader even before main()?
 	- When a user passes some commands through command-line arguments its stores and process as needed places. The command format is "String". 
 	- JVM loads below classes.

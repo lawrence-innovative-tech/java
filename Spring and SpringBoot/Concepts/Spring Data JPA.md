@@ -53,3 +53,9 @@ Durability - Once commit the transaction after system crush, still data recover.
 	- Refresh - if parent refresh child also.
 	- Detach - If parent detach state child also detach state
 	- ALL - all the above
+
+#### **Optimistic Lock
+- It won't block to read, but lock to writes and easily finds conflicts.
+- Spring data jpa handles @Version annotation, this should be in only once in the entity, when reads data from database jpa returns data + version, while update or delete the record it add + 1 to current version. if, already version has updated it throws Optimistic Exception occurs.
+
+#### **Pessitimic lock
