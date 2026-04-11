@@ -57,5 +57,5 @@ Durability - Once commit the transaction after system crush, still data recover.
 #### **Optimistic Lock
 - It won't block to read, but lock to writes and easily finds conflicts.
 - Spring data jpa handles @Version annotation, this should be in only once in the entity, when reads data from database jpa returns data + version, while update or delete the record it add + 1 to current version. if, already version has updated it throws Optimistic Exception occurs.
-
-#### **Pessitimic lock
+#### **Pessimistic lock
+- When read happens it lock the record so, following thread has blocked it possible to occur pessimistic lock.
