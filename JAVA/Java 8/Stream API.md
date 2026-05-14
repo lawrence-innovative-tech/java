@@ -49,6 +49,7 @@
 | **dropWhile** | `Stream<T> dropWhile(Predicate<? super T> predicate)` | Drops the longest prefix of elements matching the predicate (ordered streams only). | Java 9     |
 | **limit**     | `Stream<T> limit(long maxSize)`                       | Truncates to the first `maxSize` elements.                                          | Java 8     |
 | **skip**      | `Stream<T> skip(long n)`                              | Discards the first `n` elements.                                                    | Java 8     |
+|               |                                                       |                                                                                     |            |
 
 ##### **Mapping Operations
 
