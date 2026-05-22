@@ -21,4 +21,3 @@
 
 #### **Why thread stamped are not allow to re entrant lock?
 - When methods has lock, if it calls to inside the method that methods haven't lock mechanism it possible occur race conditions.
-- 
