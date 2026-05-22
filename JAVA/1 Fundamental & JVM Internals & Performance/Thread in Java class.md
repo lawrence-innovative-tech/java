@@ -1,4 +1,4 @@
-#### **Requisites 
+ #### **Requisites 
 - [[Memory Model#**Thread Mechanism|Introduction part]]
 #### **Purpose
 - Each thread handles individual stack to tracks method calling, returns, method parameters. But, Heap object is shared, when multiple thread can access the same resources or heap object **Race condition** occurs. While multi thread can access the same resources read only never meets problems instead if, update or count or like process become cause. If, possible to both thread can read input and update same output, but the output should in continues.
