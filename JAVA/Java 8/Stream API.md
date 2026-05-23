@@ -53,20 +53,20 @@
 
 ##### **Mapping Operations
 
-|Operation|Signature|Description|Introduced|
-|---|---|---|---|
-|**map**|`<R> Stream<R> map(Function<? super T, ? extends R> mapper)`|Transforms each element using the mapper (1:1).|Java 8|
-|**mapToInt**|`IntStream mapToInt(ToIntFunction<? super T> mapper)`|Maps to primitive `int` values (avoids boxing).|Java 8|
-|**mapToLong**|`LongStream mapToLong(ToLongFunction<? super T> mapper)`|Maps to primitive `long` values.|Java 8|
-|**mapToDouble**|`DoubleStream mapToDouble(ToDoubleFunction<? super T> mapper)`|Maps to primitive `double` values.|Java 8|
-|**flatMap**|`<R> Stream<R> flatMap(Function<? super T, ? extends Stream<? extends R>> mapper)`|Flattens nested streams (1:many).|Java 8|
-|**flatMapToInt**|`IntStream flatMapToInt(Function<? super T, ? extends IntStream> mapper)`|Flattens to primitive `IntStream`.|Java 8|
-|**flatMapToLong**|`LongStream flatMapToLong(Function<? super T, ? extends LongStream> mapper)`|Flattens to primitive `LongStream`.|Java 8|
-|**flatMapToDouble**|`DoubleStream flatMapToDouble(Function<? super T, ? extends DoubleStream> mapper)`|Flattens to primitive `DoubleStream`.|Java 8|
-|**mapMulti**|`<R> Stream<R> mapMulti(BiConsumer<? super T, ? super Consumer<R>> mapper)`|Maps each element to zero or more elements (advanced flattening).|Java 16|
-|**mapMultiToInt**|`IntStream mapMultiToInt(BiConsumer<? super T, ? super IntConsumer> mapper)`|Maps to zero or more primitive `int` values.|Java 16|
-|**mapMultiToLong**|`LongStream mapMultiToLong(BiConsumer<? super T, ? super LongConsumer> mapper)`|Maps to zero or more primitive `long` values.|Java 16|
-|**mapMultiToDouble**|`DoubleStream mapMultiToDouble(BiConsumer<? super T, ? super DoubleConsumer> mapper)`|Maps to zero or more primitive `double` values.|Java 16|
+| Operation            | Signature                                                                             | Description                                                       | Introduced |
+| -------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ---------- |
+| **map**              | `<R> Stream<R> map(Function<? super T, ? extends R> mapper)`                          | Transforms each element using the mapper (1:1).                   | Java 8     |
+| **mapToInt**         | `IntStream mapToInt(ToIntFunction<? super T> mapper)`                                 | Maps to primitive `int` values (avoids boxing).                   | Java 8     |
+| **mapToLong**        | `LongStream mapToLong(ToLongFunction<? super T> mapper)`                              | Maps to primitive `long` values.                                  | Java 8     |
+| **mapToDouble**      | `DoubleStream mapToDouble(ToDoubleFunction<? super T> mapper)`                        | Maps to primitive `double` values.                                | Java 8     |
+| **flatMap**          | `<R> Stream<R> flatMap(Function<? super T, ? extends Stream<? extends R>> mapper)`    | Flattens nested streams (1:many).                                 | Java 8     |
+| **flatMapToInt**     | `IntStream flatMapToInt(Function<? super T, ? extends IntStream> mapper)`             | Flattens to primitive `IntStream`.                                | Java 8     |
+| **flatMapToLong**    | `LongStream flatMapToLong(Function<? super T, ? extends LongStream> mapper)`          | Flattens to primitive `LongStream`.                               | Java 8     |
+| **flatMapToDouble**  | `DoubleStream flatMapToDouble(Function<? super T, ? extends DoubleStream> mapper)`    | Flattens to primitive `DoubleStream`.                             | Java 8     |
+| **mapMulti**         | `<R> Stream<R> mapMulti(BiConsumer<? super T, ? super Consumer<R>> mapper)`           | Maps each element to zero or more elements (advanced flattening). | Java 16    |
+| **mapMultiToInt**    | `IntStream mapMultiToInt(BiConsumer<? super T, ? super IntConsumer> mapper)`          | Maps to zero or more primitive `int` values.                      | Java 16    |
+| **mapMultiToLong**   | `LongStream mapMultiToLong(BiConsumer<? super T, ? super LongConsumer> mapper)`       | Maps to zero or more primitive `long` values.                     | Java 16    |
+| **mapMultiToDouble** | `DoubleStream mapMultiToDouble(BiConsumer<? super T, ? super DoubleConsumer> mapper)` | Maps to zero or more primitive `double` values.                   | Java 16    |
 
 ##### **Deduplicating and Sorting Operations
 
