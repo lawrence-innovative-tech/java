@@ -106,7 +106,7 @@ java --module-path mods \
 	4. Execution (Interpreter & JIT)
 	5. GC (Garbage Collection)
 2. **Loading -**
-	1. When java launcher triggered, the JRE start to execute java code, Initially its call jvm.dl to initiated JVM.
+	1. When java launcher triggered, the JRE start to execute java code, Initially its call jvm.dll to initiated JVM.
 	2. JVM start loads .classfile using [[Java Class loader#**Class Loaders|loaders]] to load bytecode to [[Memory Model#**Method Area|method area]]. 
 	3. Then Creates class object of that class. [[#**Class object for loading period|Explanation of that object]].
 	4. After creates the object, Loading instruct to method area to assigned the object to be addressed there.
