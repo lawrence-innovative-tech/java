@@ -1,3 +1,20 @@
+
+#### **Component
+- Component handles user interface. The view part. It holds HTML, CSS part of the angular project.
+- After Angular 14+ it handles one more condition for standalone. If, Component define as standalone it holds all the necessary to that angular.
+#### **Directives
+- Directive is modify dom appe
+
+#### **Decorators
+- Extensive provide metadata to classes, methods, properties and parameter.
+- In simple term, It like java annotations.
+	- ex, 
+		1. @Component
+		2. @NgModules
+		3. @ViewChild or or @ViewChildren
+		4. @ContentChild or @ContentChildren
+		5. @HostBiner or @HostListener
+
 #### **Angular Lifecycle
 - Constructor - When Typescript component calls, it invoke constructor, Constructor inject dependencies.
 - ngOnChanges - it detect changes @Input values from parent, instantly fires child component child detect and made changes using Simple Changes.
