@@ -2,9 +2,10 @@
 #### **Component
 - Component handles user interface. The view part. It holds HTML, CSS part of the angular project.
 - After Angular 14+ it handles one more condition for standalone. If, Component define as standalone it holds all the necessary to that angular.
+- **The route initiate to component class after component creates instance for that class it start to initiate to load DOM with help of Component decorator.**
 #### **Directives
-- Directive is modify dom appe
-
+- Directive is class is help change behaviour of HTML element or change appearance of DOM.
+- Ex, ngIf, ngFor, ngClass (for style changes appearance).
 #### **Decorators
 - Extensive provide metadata to classes, methods, properties and parameter.
 - In simple term, It like java annotations.
@@ -41,4 +42,9 @@
 	3. Event () - One way binding, bind to ts with user event mouse, click. key press-up.
 	4. Two way binding [( )] - Property + Event binding communication two way.
 #### Template-driven VS Reactive Forms
-- 
+- Template driven form use directive use angular controls and maintain formgroup and form controls.
+- Its asynchronous process. It use ngmodel two way binds.
+- We declare in Html itself.
+- Reactive form control and declarative in typescript so we needs to control formgroup and form controls. 
+- Its synchronous process. Easy handle complex form and dynamic forms.
+- Reactive form is one bind using formcontrolname.
