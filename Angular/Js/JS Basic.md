@@ -11,8 +11,8 @@
 	4. Const never allows re assign and re declaration.
 #### **Hoisting
 - Before start execution java scan js file allocates memory to declare variables.
-#### **Function Reference
-- Function reference is assign function declaration into scope. so while hosting only function get allocates memory.
+#### **Function Expression
+- Function expression is assign function declaration into scope. so while hosting only function get allocates memory.
 - It throws ReferenceError, only creates object at the execution phase.
 ``` javascript
 greet();  
@@ -61,7 +61,7 @@ myClosure();   // First call
 
 - outer() it invoke outer() inside inner function object creates and returns outer function inner function's object reference, it stores myclosure scope.
 - Now, myclosure get executes it copied name reference while inner function object creates, so it can used that scope after ends outer scope. This is called closure.
-- When outer completes its execution and inner still holds outer scope it possible occur memory leak, so after execution completes reassign null to holding inner object reference so that gc get clear the object.
+- When outer completes its execution and inner still holds outer scope it possible occur memory leak, so after execution completes reassign null to holding inner object reference so that gc get clear the object. another way while create inner function object with help of **WeakRef** class.
 #### **JavaScript Memory Model
 -  It uses call stack for method calling, heap for object and array storing. and one more lexical also (will update).  
 - It's not like java, slightly different.
