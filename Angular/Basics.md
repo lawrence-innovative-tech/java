@@ -48,3 +48,10 @@
 - Reactive form control and declarative in typescript so we needs to control formgroup and form controls. 
 - Its synchronous process. Easy handle complex form and dynamic forms.
 - Reactive form is one bind using formcontrolname.
+
+#### **Promise
+- Process asynchronous process eventual completion or failure. It returns resulting of the value.
+- it contains, then(), catch(), finally() methods.
+
+#### **Observable
+- Process asynchronous streams of data emit multiple values over time. It an lazy when subscribe the observable it start to execution. It allow to process RxJS.
