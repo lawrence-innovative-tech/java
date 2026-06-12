@@ -2,7 +2,7 @@
 - Spread object copies or merge the array elements. array allows duplicate because it's index based.
 - Spread or expands array fields into individual values. This called Array Thread operator.
 - Final, it return single array or object.
-``` java
+``` javascript
 this.showCheckboxes = true;
 this.columns = ['id', 'name']
 
