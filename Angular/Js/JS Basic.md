@@ -128,4 +128,9 @@ const p3 = new PersonClass("Alice");
 - Promise is eventual completion or failure of an asynchronous process. It return values.
 - then() is process success from promise returns.
 #### **async & await
+- When a function define as async keyword it process asynchronously and return promise.
+- Await, it used to hold function until promise to complete.
+
+#### **Event Loop
+- JavaScript is Single thread concept, But web api need to process asynchronous operations. 
 - 
