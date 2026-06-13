@@ -133,4 +133,57 @@ const p3 = new PersonClass("Alice");
 
 #### **Event Loop
 - JavaScript is Single thread concept, But web api need to process asynchronous operations. 
-- 
+- Synchronous process are in call stack. JavaScript executes call stack one by one. After completes all the process to look up Microtask in queue.
+- If microtask empty it checks macrotask(callback task) if exits it will executes others wise it waits.
+
+#### **Deep Copy
+- Deep copy all the nested element and completely new object.
+- structuredClone() modern and recommended way.
+``` javascript
+const user = {
+    name: "Uzumaki",
+    address: {
+        city: "Chennai"
+    }
+};
+
+const copy = structuredClone(user);
+
+copy.address.city = "Bangalore";
+
+console.log(user.address.city);
+```
+#### **Shallow Copy
+- It copies only outer element not fully copy. New and old both elements pointing same elements.
+- If new element change the value if affected by old also.
+``` javascript
+const user = {
+    name: "Uzumaki",
+    address: {
+        city: "Chennai"
+    }
+};
+
+const copy = { ...user };
+
+copy.name = "Naruto";
+copy.address.city = "Bangalore";
+
+console.log(user);
+```
+
+
+#### **High order function
+- A function pass as parameter of another function.
+```javascript
+function greet(callback) {
+    callback();
+}
+
+greet(() => console.log("Hello"));
+```
+
+#### **Default HOF(High Order Function)
+**map()** as like java transform object in type another.
+**filter()** filter element from specific condition.
+**reduce((accumulator, current) => accumulator + current)** this also same java.
