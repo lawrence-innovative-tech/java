@@ -55,3 +55,8 @@
 
 #### **Observable
 - Process asynchronous streams of data emit multiple values over time. It an lazy when subscribe the observable it start to execution. It allow to process RxJS.
+
+#### **Routing
+- Routing is navigation between components without reloading the page.
+- Url based maps and loads components.
+- Fetch path variables, param f 
