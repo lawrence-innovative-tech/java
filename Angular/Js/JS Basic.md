@@ -14,23 +14,18 @@
 #### **Function Expression
 - Function expression is assign function declaration into scope. so while hosting only function get allocates memory.
 - It throws ReferenceError, only creates object at the execution phase.
+- Arrow function and function expression are nearly same.
 ``` javascript
 greet();  
   
-const greet = function() {  
-console.log("Hello");  
+const funExp = function() {  
+console.log("Function expression.");  
 };
-```
 
-#### **Function Declaration
-- It creates object for function declaration. not function expression.
+const arrowFun = () => {
+	console.log("This is arrow function.");
+}
 
-``` javascript
-sayHello();
-
-function sayHello() {  
-  console.log("Hello");
-  }
 ```
 
 #### **Closure
