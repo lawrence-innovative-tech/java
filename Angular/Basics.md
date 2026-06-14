@@ -99,4 +99,5 @@ export class AppComponent { }
 ```
 
 #### **Auth guard or Router guard
+- It control navigation, only 
 - It's protects the routes, Only authenticated user can perform other access.

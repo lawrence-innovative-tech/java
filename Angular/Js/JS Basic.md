@@ -183,7 +183,7 @@ function greet(callback) {
 greet(() => console.log("Hello"));
 ```
 
-#### **Default HOF(High Order Function)
+#### **Default HOF(High Order Function)**
 **map()** as like java transform object in type another.
 **filter()** filter element from specific condition.
 **reduce((accumulator, current) => accumulator + current)** this also same java.
