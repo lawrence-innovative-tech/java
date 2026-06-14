@@ -115,11 +115,9 @@ const p3 = new PersonClass("Alice");
 ```
 
 **Key Point**:
-
 - Both Person and PersonClass are **functions** internally.
 - class is just cleaner syntax.
 - When you do new Person(), JavaScript creates a new object and links its __proto__ to Person.prototype.
-
 #### **Arrow Function and Normal Function
 - **Arrow Function** is shorter way to declare function. The normal function use this current context or object. But, the arrow function determined from surrounded lexical scope for this.
 - It used to define asynchronous process.
