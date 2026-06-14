@@ -99,5 +99,10 @@ export class AppComponent { }
 ```
 
 #### **Auth guard or Router guard
-- It control navigation, only 
+- It control navigation, only get access authenticated user and user has permission. 
 - It's protects the routes, Only authenticated user can perform other access.
+- Types,
+	1. canActivate - Check active route have access to user
+	2. canActivateChild - It active route's child route get access or not 
+	3. canDeactivate - Before destroy component check unsaved form ?
+	4. canMatch - can match is role based, but need to verify.
