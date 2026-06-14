@@ -57,6 +57,46 @@
 - Process asynchronous streams of data emit multiple values over time. It an lazy when subscribe the observable it start to execution. It allow to process RxJS.
 
 #### **Routing
-- Routing is navigation between components without reloading the page.
-- Url based maps and loads components.
-- Fetch path variables, param f 
+- Routing is mechanism navigation between page or view in single page application without reloading page. 
+- It map url to specific component that handles rendering and appropriate content dynamically.
+- In modern way use **providerRouter(routes)** in **main.ts or app.config** file.
+- **Standalone Component** is self contained it necessary imports, directive, decorator and it helps to achieve lazy loading also. It not belongs to retain in module based architecture.
+
+```typescript
+
+// Route config
+import { Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+
+export const routes: Routes = [
+  { path: '', component: HomeComponent },           // default route
+  { path: 'about', component: AboutComponent },
+  { path: 'dashboard', loadComponent: () => import('./dashboard/dashboard.component').then(m => m.DashboardComponent) }, // lazy loading
+  { path: '**', redirectTo: '' }                    // wildcard (404)
+];
+
+// app.config.ts or main.ts
+import { provideRouter } from '@angular/router';
+import { routes } from './app.routes';
+
+bootstrapApplication(AppComponent, {
+  providers: [provideRouter(routes)]
+});
+
+//Standalone component
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,          // ← This makes it standalone
+  imports: [CommonModule, RouterOutlet],  // ← Direct imports
+  templateUrl: './app.component.html'
+})
+export class AppComponent { }
+```
+
+#### **Auth guard or Router guard
+- It's protects the routes, Only authenticated user can perform other access.
