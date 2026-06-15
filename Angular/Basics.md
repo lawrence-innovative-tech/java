@@ -42,11 +42,11 @@
 	3. Event () - One way binding, bind to ts with user event mouse, click. key press-up.
 	4. Two way binding [( )] - Property + Event binding communication two way.
 #### Template-driven VS Reactive Forms
-- Template driven form use directive use angular controls and maintain formgroup and form controls.
+- Template driven form use directive use angular controls and maintain formgroup and formcontrols.
 - Its asynchronous process. It use ngmodel two way binds.
 - We declare in Html itself.
-- Reactive form control and declarative in typescript so we needs to control formgroup and form controls. 
-- Its synchronous process. Easy handle complex form and dynamic forms.
+- Reactive form control and declarative in typescript so we needs to control formgroup and formcontrols. 
+- Its asynchronous process. Easy handle complex form and dynamic forms.
 - Reactive form is one bind using formcontrolname.
 
 #### **Promise
